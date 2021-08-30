@@ -5,8 +5,8 @@
   
   <entry>
     <title>The First Blog（hexo+git）.md</title>
-    <link href="/2020/05/24/frist-md/"/>
-    <url>/2020/05/24/frist-md/</url>
+    <link href="/chenduo-blog.github.io/2020/05/24/frist-md/"/>
+    <url>/chenduo-blog.github.io/2020/05/24/frist-md/</url>
     
     <content type="html"><![CDATA[<p>Finally.<br>I got my first blog.</p><p>第一次建博客参考知乎文章：<a href="https://zhuanlan.zhihu.com/p/75438236">https://zhuanlan.zhihu.com/p/75438236</a></p><p>hexo官网：<a href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p><p>必要组件：Node.js homebrew nvm(管理Node.js)<br>                  nvm参考：<a href="https://www.jianshu.com/p/a3f8778bc0a1">https://www.jianshu.com/p/a3f8778bc0a1</a></p><p>hexo主题 ：<br>1.<a href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a>  （fluid 好看）<br>2.<a href="http://theme-next.iissnan.com/getting-started.html">http://theme-next.iissnan.com/getting-started.html</a> （next 使用多）<br>3.<a href="https://www.haomwei.com/technology/maupassant-hexo.html#%E4%B8%BB%E9%A2%98%E7%89%B9%E6%80%A7%EF%BC%88%E8%87%B3%E7%AE%80%EF%BC%89">https://www.haomwei.com/technology/maupassant-hexo.html#主题特性（至简）</a></p><p>图片来源：<a href="https://wallhaven.cc/toplist?page=2">https://wallhaven.cc/toplist?page=2</a></p>]]></content>
     
