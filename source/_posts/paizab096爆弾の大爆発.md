@@ -4,7 +4,7 @@ title: paiza --B096:爆弾の大爆発
 tags: [record, study,コードテスト]
 categories: 
 - 刷题
-index_img: /img/Photo by Ivars Utināns (vfn8UUtopgw).jpg
+index_img: /img/Photo by Meiying Ng.jpg
 
 ---
 很有意思的题目
