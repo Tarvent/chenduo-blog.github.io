@@ -4,7 +4,7 @@
   
   
   <entry>
-    <title>B096:爆弾の大爆発</title>
+    <title>paiza --B096:爆弾の大爆発</title>
     <link href="/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/"/>
     <url>/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/</url>
     
@@ -20,11 +20,38 @@
     
     <tags>
       
+      <tag>study</tag>
+      
       <tag>record</tag>
+      
+      <tag>コードテスト</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>JavaScript字符串数组</title>
+    <link href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/"/>
+    <url>/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/</url>
+    
+    <content type="html"><![CDATA[<h1 id="js字符串替换"><a href="#js字符串替换" class="headerlink" title="js字符串替换"></a>js字符串替换</h1><p>在JavaScript中，字符串是不可变的</p><p>需要自己定义<code>replaceAt()</code></p><p>1.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-built_in">String</span>.prototype.replaceAt=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index, replacement</span>) </span>&#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.substr(<span class="hljs-number">0</span>, index) + replacement+ <span class="hljs-built_in">this</span>.substr(index + replacement.length);<br>&#125;<br><br></code></pre></td></tr></table></figure><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">var</span> hello=<span class="hljs-string">&quot;Hello World&quot;</span>;<br>alert(hello.replaceAt(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;!!&quot;</span>)); <span class="hljs-comment">//should display He!!o World</span><br></code></pre></td></tr></table></figure><p>2.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">const</span> replaceStr1 = <span class="hljs-function">(<span class="hljs-params">str, index, char</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> strAry = str.split(<span class="hljs-string">&#x27;&#x27;</span>);<br>    strAry[index] = char;<br>    <span class="hljs-keyword">return</span> strAry.join(<span class="hljs-string">&#x27;&#x27;</span>);<br>  &#125;<br>  replaceStr(str1, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Good-Morning</span><br>  replaceStr(str2, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Hell- World</span><br></code></pre></td></tr></table></figure><h1 id="js字符转数组"><a href="#js字符转数组" class="headerlink" title="js字符转数组"></a>js字符转数组</h1><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">// 第一种 split拆分 &quot;abc&quot;.split(&#x27;&#x27;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] </span><br><span class="hljs-comment">// 第二种 [...] [...&quot;abc&quot;] ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] Array.from(&quot;abc&quot;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</span><br><br>lines[i].split(<span class="hljs-string">&#x27;&#x27;</span>)；<br></code></pre></td></tr></table></figure><h1 id="js-截取前后字符"><a href="#js-截取前后字符" class="headerlink" title="js 截取前后字符"></a>js 截取前后字符</h1><p>前</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">//前</span><br><span class="hljs-function"><span class="hljs-title">publicstaticvoidsubstringTest01</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">String</span> str = <span class="hljs-string">&quot;http_https://www.baidu.com/&quot;</span>;<br>    <span class="hljs-comment">//截取_之前字符串</span><br>    <span class="hljs-built_in">String</span> str1 = str.substring(<span class="hljs-number">0</span>, str.indexOf(<span class="hljs-string">&quot;_&quot;</span>));<br>    System.out.println(<span class="hljs-string">&quot;截取_之前字符串:&quot;</span>+str1);<br>&#125;<br></code></pre></td></tr></table></figure><p>后</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>javascript</category>
+      
+    </categories>
+    
+    
+    <tags>
       
       <tag>study</tag>
       
-      <tag>コードテスト</tag>
+      <tag>学习笔记</tag>
       
     </tags>
     
@@ -78,38 +105,11 @@
     
     <tags>
       
+      <tag>study</tag>
+      
+      <tag>学习笔记</tag>
+      
       <tag>record</tag>
-      
-      <tag>study</tag>
-      
-      <tag>学习笔记</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>JavaScript字符串数组</title>
-    <link href="/chenduo-blog.github.io/2021/08/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/"/>
-    <url>/chenduo-blog.github.io/2021/08/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/</url>
-    
-    <content type="html"><![CDATA[<h1 id="js字符串替换"><a href="#js字符串替换" class="headerlink" title="js字符串替换"></a>js字符串替换</h1><p>在JavaScript中，字符串是不可变的</p><p>需要自己定义<code>replaceAt()</code></p><p>1.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-built_in">String</span>.prototype.replaceAt=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index, replacement</span>) </span>&#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.substr(<span class="hljs-number">0</span>, index) + replacement+ <span class="hljs-built_in">this</span>.substr(index + replacement.length);<br>&#125;<br><br></code></pre></td></tr></table></figure><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">var</span> hello=<span class="hljs-string">&quot;Hello World&quot;</span>;<br>alert(hello.replaceAt(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;!!&quot;</span>)); <span class="hljs-comment">//should display He!!o World</span><br></code></pre></td></tr></table></figure><p>2.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">const</span> replaceStr1 = <span class="hljs-function">(<span class="hljs-params">str, index, char</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> strAry = str.split(<span class="hljs-string">&#x27;&#x27;</span>);<br>    strAry[index] = char;<br>    <span class="hljs-keyword">return</span> strAry.join(<span class="hljs-string">&#x27;&#x27;</span>);<br>  &#125;<br>  replaceStr(str1, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Good-Morning</span><br>  replaceStr(str2, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Hell- World</span><br></code></pre></td></tr></table></figure><h1 id="js字符转数组"><a href="#js字符转数组" class="headerlink" title="js字符转数组"></a>js字符转数组</h1><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">// 第一种 split拆分 &quot;abc&quot;.split(&#x27;&#x27;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] </span><br><span class="hljs-comment">// 第二种 [...] [...&quot;abc&quot;] ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] Array.from(&quot;abc&quot;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</span><br><br>lines[i].split(<span class="hljs-string">&#x27;&#x27;</span>)；<br></code></pre></td></tr></table></figure><h1 id="js-截取前后字符"><a href="#js-截取前后字符" class="headerlink" title="js 截取前后字符"></a>js 截取前后字符</h1><p>前</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">//前</span><br><span class="hljs-function"><span class="hljs-title">publicstaticvoidsubstringTest01</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">String</span> str = <span class="hljs-string">&quot;http_https://www.baidu.com/&quot;</span>;<br>    <span class="hljs-comment">//截取_之前字符串</span><br>    <span class="hljs-built_in">String</span> str1 = str.substring(<span class="hljs-number">0</span>, str.indexOf(<span class="hljs-string">&quot;_&quot;</span>));<br>    System.out.println(<span class="hljs-string">&quot;截取_之前字符串:&quot;</span>+str1);<br>&#125;<br></code></pre></td></tr></table></figure><p>后</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>javascript</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>study</tag>
-      
-      <tag>学习笔记</tag>
       
     </tags>
     
@@ -134,11 +134,11 @@
     
     <tags>
       
+      <tag>记录</tag>
+      
       <tag>博客</tag>
       
       <tag>学习</tag>
-      
-      <tag>记录</tag>
       
     </tags>
     
