@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>B096:爆弾の大爆発</title>
+    <link href="/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/"/>
+    <url>/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/</url>
+    
+    <content type="html"><![CDATA[<p>很有意思的题目<br>难度：easy~medium</p><p>process.stdin.resume();<br>process.stdin.setEncoding(‘utf8’);<br>// 自分の得意な言語で<br>// Let’s チャレンジ！！<br>var lines = [];<br>var reader = require(‘readline’).createInterface({<br>input: process.stdin,<br>output: process.stdout<br>});<br>reader.on(‘line’, (line) =&gt; {<br>lines.push(line);<br>});<br>reader.on(‘close’, () =&gt; {<br>var N=lines[0];</p><p>var n = N.substring(0, N.indexOf(“ “));</p><p>var m = N.substring(N.indexOf(“ “)+1,N.length);<br>//注意一位数以上的索引和截取<br>const coor = [];<br>for(let i=1;i&lt;=n;i++){<br>    for(let j=0; j&lt;=m;j++){<br>        if(lines[i][j]==’#’){<br>            coor.push([i,j]);<br>        }<br>    }<br>}//获取坐标炸弹</p><p>const result=[];</p><p>for(let i=0;i&lt;=n;i++){<br>    result.push(lines[i].split(‘’));<br>}//change to 数组</p><p>for(let i=0;i&lt;coor.length;i++){<br>    var x=coor[i][0];</p><pre><code>for(let j=0;j&lt;m;j++)&#123;    result[x][j]=&#39;#&#39;;&#125;</code></pre><p>}//横坐标<br>for(let i=0;i&lt;coor.length;i++){<br>    var y= coor[i][1];</p><pre><code>for(let j=1;j&lt;=n;j++)&#123;    if(result[j][y]!=&#39;#&#39;)&#123;        result[j][y]=&#39;#&#39;;    &#125;&#125;</code></pre><p>}//纵坐标</p><p>var z = 0;<br>for(let i=0;i&lt;=n;i++){<br>    for(let j=0;j&lt;=m;j++){<br>        if(result[i][j]==’#’){<br>            z++;<br>        }<br>    }<br>}//count z</p><p>console.log(z);<br>});</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>刷题</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>record</tag>
+      
+      <tag>study</tag>
+      
+      <tag>コードテスト</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>《遥远的救世主》读后</title>
     <link href="/chenduo-blog.github.io/2021/08/31/%E9%81%A5%E8%BF%9C%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB/"/>
     <url>/chenduo-blog.github.io/2021/08/31/%E9%81%A5%E8%BF%9C%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB/</url>
@@ -62,11 +91,38 @@
   
   
   <entry>
-    <title>The First Blog（hexo+git）</title>
+    <title>JavaScript字符串数组</title>
+    <link href="/chenduo-blog.github.io/2021/08/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/"/>
+    <url>/chenduo-blog.github.io/2021/08/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/</url>
+    
+    <content type="html"><![CDATA[<h1 id="js字符串替换"><a href="#js字符串替换" class="headerlink" title="js字符串替换"></a>js字符串替换</h1><p>在JavaScript中，字符串是不可变的</p><p>需要自己定义<code>replaceAt()</code></p><p>1.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-built_in">String</span>.prototype.replaceAt=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index, replacement</span>) </span>&#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.substr(<span class="hljs-number">0</span>, index) + replacement+ <span class="hljs-built_in">this</span>.substr(index + replacement.length);<br>&#125;<br><br></code></pre></td></tr></table></figure><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">var</span> hello=<span class="hljs-string">&quot;Hello World&quot;</span>;<br>alert(hello.replaceAt(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;!!&quot;</span>)); <span class="hljs-comment">//should display He!!o World</span><br></code></pre></td></tr></table></figure><p>2.</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">const</span> replaceStr1 = <span class="hljs-function">(<span class="hljs-params">str, index, char</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> strAry = str.split(<span class="hljs-string">&#x27;&#x27;</span>);<br>    strAry[index] = char;<br>    <span class="hljs-keyword">return</span> strAry.join(<span class="hljs-string">&#x27;&#x27;</span>);<br>  &#125;<br>  replaceStr(str1, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Good-Morning</span><br>  replaceStr(str2, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Hell- World</span><br></code></pre></td></tr></table></figure><h1 id="js字符转数组"><a href="#js字符转数组" class="headerlink" title="js字符转数组"></a>js字符转数组</h1><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">// 第一种 split拆分 &quot;abc&quot;.split(&#x27;&#x27;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] </span><br><span class="hljs-comment">// 第二种 [...] [...&quot;abc&quot;] ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] Array.from(&quot;abc&quot;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</span><br><br>lines[i].split(<span class="hljs-string">&#x27;&#x27;</span>)；<br></code></pre></td></tr></table></figure><h1 id="js-截取前后字符"><a href="#js-截取前后字符" class="headerlink" title="js 截取前后字符"></a>js 截取前后字符</h1><p>前</p><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">//前</span><br><span class="hljs-function"><span class="hljs-title">publicstaticvoidsubstringTest01</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">String</span> str = <span class="hljs-string">&quot;http_https://www.baidu.com/&quot;</span>;<br>    <span class="hljs-comment">//截取_之前字符串</span><br>    <span class="hljs-built_in">String</span> str1 = str.substring(<span class="hljs-number">0</span>, str.indexOf(<span class="hljs-string">&quot;_&quot;</span>));<br>    System.out.println(<span class="hljs-string">&quot;截取_之前字符串:&quot;</span>+str1);<br>&#125;<br></code></pre></td></tr></table></figure><p>后</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>javascript</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+      <tag>学习笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Blog（hexo+git）</title>
     <link href="/chenduo-blog.github.io/2020/05/24/frist-md/"/>
     <url>/chenduo-blog.github.io/2020/05/24/frist-md/</url>
     
-    <content type="html"><![CDATA[<p>Finally.<br>I got my first blog.</p><p>第一次建博客参考知乎文章：<a href="https://zhuanlan.zhihu.com/p/75438236">https://zhuanlan.zhihu.com/p/75438236</a></p><p>hexo官网：<a href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p><p>必要组件：Node.js homebrew nvm(管理Node.js)<br>                  nvm参考：<a href="https://www.jianshu.com/p/a3f8778bc0a1">https://www.jianshu.com/p/a3f8778bc0a1</a></p><p>hexo主题 ：<br>1.<a href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a>  （fluid 好看）<br>2.<a href="http://theme-next.iissnan.com/getting-started.html">http://theme-next.iissnan.com/getting-started.html</a> （next 使用多）<br>3.<a href="https://www.haomwei.com/technology/maupassant-hexo.html#%E4%B8%BB%E9%A2%98%E7%89%B9%E6%80%A7%EF%BC%88%E8%87%B3%E7%AE%80%EF%BC%89">https://www.haomwei.com/technology/maupassant-hexo.html#主题特性（至简）</a></p><p>图片来源：<a href="https://wallhaven.cc/toplist?page=2">https://wallhaven.cc/toplist?page=2</a></p>]]></content>
+    <content type="html"><![CDATA[<p>hexo官网：<a href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p><p>必要组件：Node.js homebrew nvm(管理Node.js)<br>                  nvm参考：<a href="https://www.jianshu.com/p/a3f8778bc0a1">https://www.jianshu.com/p/a3f8778bc0a1</a></p><p>hexo主题 ：<br>1.<a href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a>  （fluid 好看）<br>2.<a href="http://theme-next.iissnan.com/getting-started.html">http://theme-next.iissnan.com/getting-started.html</a> （next 使用多）<br>3.<a href="https://www.haomwei.com/technology/maupassant-hexo.html#%E4%B8%BB%E9%A2%98%E7%89%B9%E6%80%A7%EF%BC%88%E8%87%B3%E7%AE%80%EF%BC%89">https://www.haomwei.com/technology/maupassant-hexo.html#主题特性（至简）</a></p><p>图片来源：<a href="https://wallhaven.cc/toplist?page=2">https://wallhaven.cc/toplist?page=2</a></p>]]></content>
     
     
     <categories>
