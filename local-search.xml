@@ -20,9 +20,9 @@
     
     <tags>
       
-      <tag>study</tag>
-      
       <tag>record</tag>
+      
+      <tag>study</tag>
       
       <tag>コードテスト</tag>
       
@@ -76,9 +76,9 @@
     
     <tags>
       
-      <tag>study</tag>
-      
       <tag>record</tag>
+      
+      <tag>study</tag>
       
       <tag>コードテスト</tag>
       
@@ -134,11 +134,40 @@
     
     <tags>
       
+      <tag>record</tag>
+      
       <tag>study</tag>
       
       <tag>学习笔记</tag>
       
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>AboutGithub</title>
+    <link href="/chenduo-blog.github.io/2018/08/25/AboutGithub/"/>
+    <url>/chenduo-blog.github.io/2018/08/25/AboutGithub/</url>
+    
+    <content type="html"><![CDATA[<h1 id="github-基础"><a href="#github-基础" class="headerlink" title="github 基础"></a>github 基础</h1><h2 id="执行git"><a href="#执行git" class="headerlink" title="执行git"></a>执行git</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs csharp">git <span class="hljs-keyword">init</span><br></code></pre></td></tr></table></figure><h2 id="github-仓库链接"><a href="#github-仓库链接" class="headerlink" title="github 仓库链接"></a>github 仓库链接</h2><figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">git remote <span class="hljs-built_in">add</span> origin [<span class="hljs-keyword">https</span> ]<br></code></pre></td></tr></table></figure><h2 id="拉到本地防止冲突"><a href="#拉到本地防止冲突" class="headerlink" title="拉到本地防止冲突"></a>拉到本地防止冲突</h2><figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">git</span> <span class="hljs-variable">pull</span> <span class="hljs-variable">origin</span> <span class="hljs-function"><span class="hljs-title">master</span>(<span class="hljs-variable">main</span>)</span><br></code></pre></td></tr></table></figure><h2 id="提交本地缓存"><a href="#提交本地缓存" class="headerlink" title="提交本地缓存"></a>提交本地缓存</h2><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs routeros">git <span class="hljs-builtin-name">add</span> .<br></code></pre></td></tr></table></figure><h2 id="形成本地仓库的项目文件分支结构"><a href="#形成本地仓库的项目文件分支结构" class="headerlink" title="形成本地仓库的项目文件分支结构"></a>形成本地仓库的项目文件分支结构</h2><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">git</span> commit -m <span class="hljs-string">&#x27;first commit&#x27;</span><br></code></pre></td></tr></table></figure><h2 id="本地仓库内容提交到github仓库"><a href="#本地仓库内容提交到github仓库" class="headerlink" title="本地仓库内容提交到github仓库"></a>本地仓库内容提交到github仓库</h2><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs maxima">git <span class="hljs-built_in">push</span> -u <span class="hljs-built_in">origin</span> master<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>刷题</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
       <tag>record</tag>
+      
+      <tag>study</tag>
+      
+      <tag>コードテスト</tag>
       
     </tags>
     
