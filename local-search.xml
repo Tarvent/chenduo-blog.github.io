@@ -60,6 +60,35 @@
   
   
   <entry>
+    <title>paiza --C084</title>
+    <link href="/chenduo-blog.github.io/2022/03/14/paizaC084/"/>
+    <url>/chenduo-blog.github.io/2022/03/14/paizaC084/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><p>あなたは友人に向けてメールを送ろうとしています。<br>ただメールを送るだけではつまらないので、文字列を装飾して送ることにしました。<br>送りたい文字列の周囲を “+” で枠のように囲んで装飾します。</p><p>このような処理を手作業で行いたくないため、プログラムで装飾しようとしています。<br>この “+” の枠で囲む装飾をするプログラムを書いてください。</p><p>入力例 1 では “Paiza” という文字列を送ります。<br>この文字を枠で囲み装飾すると、以下のようになります。</p><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">+++++++<br>+Paiza+<br>+++++++<br></code></pre></td></tr></table></figure><hr><h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs jkx">process.stdin.resume();<br>process.stdin.setEncoding(&#x27;utf8&#x27;);<br>// 自分の得意な言語で<br>// Let&#x27;s チャレンジ！！<br>var lines = [];<br>var reader = require(&#x27;readline&#x27;).createInterface(&#123;<br>input: process.stdin,<br>output: process.stdout<br>&#125;);<br>reader.on(&#x27;line&#x27;, (line) =&gt; &#123;<br>lines.push(line);<br>&#125;);<br>reader.on(&#x27;close&#x27;, () =&gt; &#123;<br>var N = lines[0].length + 2;<br>for(let i = 0; i &lt; N; i++)&#123;<br>process.stdout.write(&#x27;+&#x27;);<br>&#125;<br>console.log(&#x27;\n+&#x27;+lines[0]+&#x27;+&#x27;);<br>for(let j = 0; j &lt; N ; j ++)&#123;<br>process.stdout.write(&#x27;+&#x27;);<br>&#125;&#125;);<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>刷题</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+      <tag>record</tag>
+      
+      <tag>コードテスト</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>《遥远的救世主》读后</title>
     <link href="/chenduo-blog.github.io/2021/08/31/%E9%81%A5%E8%BF%9C%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB/"/>
     <url>/chenduo-blog.github.io/2021/08/31/%E9%81%A5%E8%BF%9C%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB/</url>
