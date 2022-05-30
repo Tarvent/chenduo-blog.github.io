@@ -18,7 +18,7 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>《遥远的救世主》读后 - Tarvent blog</title>
+  <title>JavaScript字符串数组 - Tarvent blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="《遥远的救世主》读后">
+            <span class="h2" id="subtitle" title="JavaScript字符串数组">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-31 00:00" pubdate>
-        August 31, 2021 am
+      <time datetime="2022-04-30 00:00" pubdate>
+        April 30, 2022 am
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      534 字
+      217 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      3
        分钟
     </span>
   
@@ -225,29 +225,25 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">《遥远的救世主》读后</h1>
+            <h1 style="display: none">JavaScript字符串数组</h1>
             
             <div class="markdown-body">
-              <h1 id="1-三部曲"><a href="#1-三部曲" class="headerlink" title="1. 三部曲"></a>1. 三部曲</h1><ul>
-<li>《背叛》</li>
-<li>《遥远的就救世主》</li>
-<li>《天幕红尘》</li>
-</ul>
-<h1 id="2-五台山论道"><a href="#2-五台山论道" class="headerlink" title="2. 五台山论道"></a>2. 五台山论道</h1><p>悟  </p>
-<p>悟道休言天命， </p>
-<p> 修行勿取真经。 </p>
-<p> 一悲一喜一枯荣， </p>
-<p> 哪个前生注定？  </p>
-<p>袈裟本无清净，  </p>
-<p>红尘不染性空。  </p>
-<p>幽幽古刹千年钟，  </p>
-<p>都是痴人说梦。</p>
-<p>佛乃觉性，非人，人人都有觉性不等于觉性就是人。人相 可坏，觉性无生无灭，即觉即显，即障即尘蔽，无障不显，了障涅槃。觉行圆满之佛乃佛教人相之佛，圆满即止，即非无量。若佛有量，即非阿弥陀佛。佛法无量即 觉行无量，无圆无不圆，无满无不满，亦无是名究竟圆满。晚辈个人以为，佛教以次第而分，从精深处说是得道天成的道法，道法如来不可思议，即非文化。从浅义 处说是导人向善的教义，善恶本有人相、我相、众生相，即是文化。从众生处说是以贪制贪、以幻制幻的善巧，虽不灭败坏下流，却无碍抚慰灵魂的慈悲。</p>
-<p>晚辈以为，传统观念的死结就在一个‘靠’字上，在家靠父母，出门靠朋友，靠上帝、靠菩萨、靠皇恩……总之靠什么都行，就是别靠自己。这是一个沉积了几千年的文 化属性问题，非几次新文化运动就能开悟。晚辈无意评说道法，只在已经缘起的事情里顺水推舟，借英雄好汉的嗓子喊上两声，至少不违天道朝纲。</p>
-<h1 id="3-为什么自杀"><a href="#3-为什么自杀" class="headerlink" title="3. 为什么自杀"></a>3. 为什么自杀</h1><p>实事求是，不搞形式。这才叫当生则生，当死则死</p>
-<h1 id="4-救主，自救"><a href="#4-救主，自救" class="headerlink" title="4. 救主，自救"></a>4. 救主，自救</h1><p>杀富富不去，救贫贫不离，扶贫是不治之治，不解决造血问题。救主不是人，是道，得救不是破了戒的狼吞虎咽，是觉悟。</p>
-<h3 id="天道"><a href="#天道" class="headerlink" title="天道"></a>天道</h3><p>天是什么？ 天是神，是上帝，是创造万物者，是全能全知者，是遍在不可见者。天是道，是食物规律和自然法则。</p>
-<p>了妄唯真即是神，人和神不一不异。</p>
+              <h1 id="js字符串替换"><a href="#js字符串替换" class="headerlink" title="js字符串替换"></a>js字符串替换</h1><p>在JavaScript中，字符串是不可变的</p>
+<p>需要自己定义<code>replaceAt()</code></p>
+<p>1.</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-built_in">String</span>.prototype.replaceAt=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">index, replacement</span>) </span>&#123;<br>    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.substr(<span class="hljs-number">0</span>, index) + replacement+ <span class="hljs-built_in">this</span>.substr(index + replacement.length);<br>&#125;<br><br></code></pre></td></tr></table></figure>
+
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">var</span> hello=<span class="hljs-string">&quot;Hello World&quot;</span>;<br>alert(hello.replaceAt(<span class="hljs-number">2</span>, <span class="hljs-string">&quot;!!&quot;</span>)); <span class="hljs-comment">//should display He!!o World</span><br></code></pre></td></tr></table></figure>
+
+<p>2.</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-keyword">const</span> replaceStr1 = <span class="hljs-function">(<span class="hljs-params">str, index, char</span>) =&gt;</span> &#123;<br>    <span class="hljs-keyword">const</span> strAry = str.split(<span class="hljs-string">&#x27;&#x27;</span>);<br>    strAry[index] = char;<br>    <span class="hljs-keyword">return</span> strAry.join(<span class="hljs-string">&#x27;&#x27;</span>);<br>  &#125;<br>  replaceStr(str1, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Good-Morning</span><br>  replaceStr(str2, <span class="hljs-number">4</span>, <span class="hljs-string">&#x27;-&#x27;</span>); <span class="hljs-comment">// =&gt; Hell- World</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="js字符转数组"><a href="#js字符转数组" class="headerlink" title="js字符转数组"></a>js字符转数组</h1><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">// 第一种 split拆分 &quot;abc&quot;.split(&#x27;&#x27;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] </span><br><span class="hljs-comment">// 第二种 [...] [...&quot;abc&quot;] ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] Array.from(&quot;abc&quot;) ==&gt; [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]</span><br><br>lines[i].split(<span class="hljs-string">&#x27;&#x27;</span>)；<br></code></pre></td></tr></table></figure>
+
+<h1 id="js-截取前后字符"><a href="#js-截取前后字符" class="headerlink" title="js 截取前后字符"></a>js 截取前后字符</h1><p>前</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs jsx"><span class="hljs-comment">//前</span><br><span class="hljs-function"><span class="hljs-title">publicstaticvoidsubstringTest01</span>(<span class="hljs-params"></span>)</span>&#123;<br>    <span class="hljs-built_in">String</span> str = <span class="hljs-string">&quot;http_https://www.baidu.com/&quot;</span>;<br>    <span class="hljs-comment">//截取_之前字符串</span><br>    <span class="hljs-built_in">String</span> str1 = str.substring(<span class="hljs-number">0</span>, str.indexOf(<span class="hljs-string">&quot;_&quot;</span>));<br>    System.out.println(<span class="hljs-string">&quot;截取_之前字符串:&quot;</span>+str1);<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>后</p>
 
             </div>
             <hr>
@@ -257,9 +253,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
-                    
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/%E6%9D%82%E8%B0%88/%E8%AF%BB%E5%90%8E%E6%84%9F/">读后感</a>
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/javascript/">javascript</a>
                     
                   </div>
                 
@@ -267,7 +261,9 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/study/">study</a>
+                    
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
                     
                   </div>
                 
@@ -284,9 +280,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/">
+                      <a href="/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JavaScript字符串数组</span>
+                        <span class="hidden-mobile">paiza --B096:爆弾の大爆発</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -294,8 +290,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2021/08/30/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/">
-                        <span class="hidden-mobile">web application security(书)</span>
+                      <a href="/chenduo-blog.github.io/2021/08/31/%E9%81%A5%E8%BF%9C%E7%9A%84%E6%95%91%E4%B8%96%E4%B8%BB/">
+                        <span class="hidden-mobile">《遥远的救世主》读后</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

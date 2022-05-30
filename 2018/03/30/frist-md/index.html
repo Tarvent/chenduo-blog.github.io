@@ -18,7 +18,7 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>《遥远的救世主》读后 - Tarvent blog</title>
+  <title>Blog（hexo+git） - Tarvent blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -163,7 +163,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="《遥远的救世主》读后">
+            <span class="h2" id="subtitle" title="Blog（hexo+git）">
               
             </span>
 
@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-31 00:00" pubdate>
-        August 31, 2021 am
+      <time datetime="2018-03-30 00:00" pubdate>
+        March 30, 2018 am
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      534 字
+      1.4k 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      16
        分钟
     </span>
   
@@ -225,29 +225,73 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">《遥远的救世主》读后</h1>
+            <h1 style="display: none">Blog（hexo+git）</h1>
             
             <div class="markdown-body">
-              <h1 id="1-三部曲"><a href="#1-三部曲" class="headerlink" title="1. 三部曲"></a>1. 三部曲</h1><ul>
-<li>《背叛》</li>
-<li>《遥远的就救世主》</li>
-<li>《天幕红尘》</li>
-</ul>
-<h1 id="2-五台山论道"><a href="#2-五台山论道" class="headerlink" title="2. 五台山论道"></a>2. 五台山论道</h1><p>悟  </p>
-<p>悟道休言天命， </p>
-<p> 修行勿取真经。 </p>
-<p> 一悲一喜一枯荣， </p>
-<p> 哪个前生注定？  </p>
-<p>袈裟本无清净，  </p>
-<p>红尘不染性空。  </p>
-<p>幽幽古刹千年钟，  </p>
-<p>都是痴人说梦。</p>
-<p>佛乃觉性，非人，人人都有觉性不等于觉性就是人。人相 可坏，觉性无生无灭，即觉即显，即障即尘蔽，无障不显，了障涅槃。觉行圆满之佛乃佛教人相之佛，圆满即止，即非无量。若佛有量，即非阿弥陀佛。佛法无量即 觉行无量，无圆无不圆，无满无不满，亦无是名究竟圆满。晚辈个人以为，佛教以次第而分，从精深处说是得道天成的道法，道法如来不可思议，即非文化。从浅义 处说是导人向善的教义，善恶本有人相、我相、众生相，即是文化。从众生处说是以贪制贪、以幻制幻的善巧，虽不灭败坏下流，却无碍抚慰灵魂的慈悲。</p>
-<p>晚辈以为，传统观念的死结就在一个‘靠’字上，在家靠父母，出门靠朋友，靠上帝、靠菩萨、靠皇恩……总之靠什么都行，就是别靠自己。这是一个沉积了几千年的文 化属性问题，非几次新文化运动就能开悟。晚辈无意评说道法，只在已经缘起的事情里顺水推舟，借英雄好汉的嗓子喊上两声，至少不违天道朝纲。</p>
-<h1 id="3-为什么自杀"><a href="#3-为什么自杀" class="headerlink" title="3. 为什么自杀"></a>3. 为什么自杀</h1><p>实事求是，不搞形式。这才叫当生则生，当死则死</p>
-<h1 id="4-救主，自救"><a href="#4-救主，自救" class="headerlink" title="4. 救主，自救"></a>4. 救主，自救</h1><p>杀富富不去，救贫贫不离，扶贫是不治之治，不解决造血问题。救主不是人，是道，得救不是破了戒的狼吞虎咽，是觉悟。</p>
-<h3 id="天道"><a href="#天道" class="headerlink" title="天道"></a>天道</h3><p>天是什么？ 天是神，是上帝，是创造万物者，是全能全知者，是遍在不可见者。天是道，是食物规律和自然法则。</p>
-<p>了妄唯真即是神，人和神不一不异。</p>
+              <p>一、安装</p>
+<p>首先，需要安装node.js、npm和Git</p>
+<p>Git可直接下载安装包进行安装。点击下载。安装后，需要下载xcode才可以。否则在使用中会遇到错误。这里我出现的问题是起初没有下载xcode，在后面初始化的时候，一直提示找不到Git，下载了xcode也不行，后来我打开了xcode，然后在关闭，就可以了。因为是小白，具体原因不明<br>接下来安装node.js。打开终端，输入命令<br>npm install -g hexo-cli<br>这里遇到的问题是，提示没有权限，于是在上面的命令增加了sudo，如下:</p>
+<p>sudo npm install -g hexo-cli<br>然后安装node.js。我也是直接下载安装程序来进行安装的。点击下载<br>安装完后，可输入以下命令进行检查，输入每个命令后，都会弹出相应版本号。<br>node -v</p>
+<p>npm -v</p>
+<p>Git –version<br>然后在进行安装hexo，输入以下命令即可，遇到的问题与安装node.js类似。所以直接加了sudo</p>
+<p>sudo npm install -g hexo<br>二、博客初始化</p>
+<p>首先创建一个文件夹，该文件夹用于存储博客的文件。然后通过终端，进入到该文件夹，命令如下：</p>
+<p>cd youblogfiles<br>然后初始化本地博客，输入以下命令。初始化时，切记文件夹要空的才可以，否则会初始化失败。若失败了建议删除文件夹在重新创建。</p>
+<p>hexo init<br>完成后在进行安装npm</p>
+<p>sudo npm install<br>执行下述命令生成本地网页文件并开启服务器，然后通过<a href="http://localhost:4000查看本地博客。">http://localhost:4000查看本地博客。</a></p>
+<p>hexo g<br>hexo s<br>三、上传代码</p>
+<p>注册并登陆GitHub账号后，新建仓库，名称必须为 user.github.io，如 hxf236386915.github.io。 打开文件_config.yml，翻到最底下，将下面代码复制进去。</p>
+<p>deploy:<br>  type: git<br>  repository: <a target="_blank" rel="noopener" href="https://github.com/hxf236386915/hxf236386915.github.io.git">https://github.com/hxf236386915/hxf236386915.github.io.git</a><br>  branch: master<br>其中将repository中hxf236386915改为自己的用户名，注意type、repository、branch后均有空格。通过如下命令在youblogfiles下生成静态文件并上传到服务器。</p>
+<p>hexo g<br>hexo d<br>若执行hexo g出错则执行npm install hexo –save，若执行hexo d出错则执行npm install hexo-deployer-git –save。错误修正后再次执行hexo g和hexo d上传到服务器。</p>
+<p>若未关联GitHub，执行hexo d时会提示输入GitHub账号用户名和密码，即:</p>
+<p>username for ‘<a target="_blank" rel="noopener" href="https://github.com&/#39;">https://github.com&#39;</a>:<br>password for ‘<a target="_blank" rel="noopener" href="https://github.com&/#39;">https://github.com&#39;</a>:<br>hexo d执行成功后便可通过<a target="_blank" rel="noopener" href="https://hxf236386915.github.io访问博客,看到的内容和http//localhost:4000%E7%9B%B8%E5%90%8C%E3%80%82">https://hxf236386915.github.io访问博客，看到的内容和http://localhost:4000相同。</a></p>
+<p>四、添加ssh keys 到github</p>
+<p>添加ssh key后不需要每次更新博客再输入用户名和密码。首先检查本地是否包含ssh keys。如果存在则直接将ssh key添加到GitHub之中，否则新生成ssh key。</p>
+<p>输入一下代码，之后按照要求输入账号和两次密码</p>
+<p>ssh-keygen -t rsa -C “your_email@exampl”<br>完成之后，打开博客文件夹，将your_email.pub中的内容复制到github中的设置-deploy keys中即可。</p>
+<p>然后执行如下代码</p>
+<p>hexo g<br>hexo d<br>五、绑定域名</p>
+<p>首先，在博客文件夹中创建CNAME文件，不可以有后缀。然后将域名粘贴进文件中。并上传至github。</p>
+<p>然后，在通过阿里云进行解析。详情如下</p>
+<p>记录类型：CNAME<br>主机记录：@<br>解析线路：默认<br>记录值：<a target="_blank" rel="noopener" href="http://hxf236386915.github.io/">http://hxf236386915.github.io</a><br>六、安装配置主题</p>
+<p>这里使用的的是hexo中的theme主题。命令如下</p>
+<p>cd youblogflie（你的博客文件夹）<br>git clone <a target="_blank" rel="noopener" href="https://github.com/iissnan/hexo-theme-next">https://github.com/iissnan/hexo-theme-next</a> themes/next<br>将blog目录下_config.yml里的theme的名称landscape更改为next。</p>
+<p>执行如下命令（每次部署文章的步骤）</p>
+<p>hexo g  //生成缓存和静态文件<br>hexo d  //重新部署到服务器<br>当本地博客部署到服务器后，网页端无变化时可以采用下述命令。</p>
+<p>hexo clean  //清楚缓存文件(db.json)和已生成的静态文件(public)<br>配置主题可在主题官网中查看相应教程，需要注意的是站点配置文件和主题配置文件。点击进入next官网</p>
+<p>站点配置文件就是博客文件夹目录下的_config.yml。 主题配置文件为，博客文件夹-theme-next下的_config.yml</p>
+<p>七、写作</p>
+<p>首先创建一个md文件，命令如下：</p>
+<p>hexo new 文件名<br>然后在博客文件夹目录下的source-_posts打开。</p>
+<p>title：代表标题</p>
+<p>date：日期</p>
+<p>tags：[标签1，标签2]</p>
+<p>categories：分类</p>
+<p>—</p>
+<p>正文</p>
+<p>超链接：</p>
+<p><a target="_blank" rel="noopener" href="https://houxuefeng.com/">F</a><br>图片：</p>
+<p><img src="http://pvacs1eu6.bkt.clouddn.com/WechatIMG57.jpeg" srcset="/chenduo-blog.github.io/img/loading.gif" lazyload alt="1"><br>或者</p>
+<img src="http://pvacs1eu6.bkt.clouddn.com/WechatIMG57.jpeg" srcset="/chenduo-blog.github.io/img/loading.gif" lazyload width = 100% div align=center/>
+下面这个可以调整大小。
+
+<p>音乐：</p>
+<audio id="audio" autoplay="autoplay">
+    <source src="http://qzone.haoduoge.com/music1/2015-04-23/1429774382.mp3" type="audio/mp3"></source>
+</audio>
+八、关于图床的问题
+
+<p>本人选择的是七牛云，注册登录后，创建存储。然后就可以上传图片了。在上传完图片后选择复制外链即可。</p>
+<p>同时推荐一款工具叫ipic。可自行搜索下载。</p>
+<p>九、其他</p>
+<p>另外在修改配置的时候，可以使用hexo s 边修改边预览。</p>
+<p>修改创建文章时的默认值，可修改博客文件目录下 scaffolds-post.md 即可。</p>
+<p>以上。</p>
+<hr>
+<p>hexo官网：<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/setup">https://hexo.io/zh-cn/docs/setup</a></p>
+<p>必要组件：Node.js homebrew nvm(管理Node.js)<br>                  nvm参考：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/a3f8778bc0a1">https://www.jianshu.com/p/a3f8778bc0a1</a></p>
+<p>hexo主题 ：<br>1.<a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a>  （fluid 好看）<br>2.<a target="_blank" rel="noopener" href="http://theme-next.iissnan.com/getting-started.html">http://theme-next.iissnan.com/getting-started.html</a> （next 使用多）<br>3.<a target="_blank" rel="noopener" href="https://www.haomwei.com/technology/maupassant-hexo.html#%E4%B8%BB%E9%A2%98%E7%89%B9%E6%80%A7%EF%BC%88%E8%87%B3%E7%AE%80%EF%BC%89">https://www.haomwei.com/technology/maupassant-hexo.html#主题特性（至简）</a></p>
+<p>图片来源：<a target="_blank" rel="noopener" href="https://wallhaven.cc/toplist?page=2">https://wallhaven.cc/toplist?page=2</a></p>
 
             </div>
             <hr>
@@ -257,9 +301,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/%E6%9D%82%E8%B0%88/">杂谈</a>
-                    
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/%E6%9D%82%E8%B0%88/%E8%AF%BB%E5%90%8E%E6%84%9F/">读后感</a>
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/blog/">blog</a>
                     
                   </div>
                 
@@ -267,7 +309,11 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E8%AF%BB%E4%B9%A6/">读书</a>
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E8%AE%B0%E5%BD%95/">记录</a>
+                    
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+                    
+                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
                     
                   </div>
                 
@@ -284,21 +330,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/">
+                      <a href="/chenduo-blog.github.io/2021/08/30/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JavaScript字符串数组</span>
+                        <span class="hidden-mobile">web application security(书)</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/chenduo-blog.github.io/2021/08/30/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/">
-                        <span class="hidden-mobile">web application security(书)</span>
-                        <span class="visible-mobile">Next</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>
