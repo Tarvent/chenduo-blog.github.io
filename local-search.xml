@@ -201,6 +201,33 @@
   
   
   <entry>
+    <title>vue3部署githubpage</title>
+    <link href="/chenduo-blog.github.io/2021/06/11/vue%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage/"/>
+    <url>/chenduo-blog.github.io/2021/06/11/vue%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight mipsasm"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs mipsasm">npm run <span class="hljs-keyword">build</span><br><span class="hljs-keyword"></span>git checkout -<span class="hljs-keyword">b </span>gh-pages<br>git <span class="hljs-keyword">add </span>-f <span class="hljs-keyword">dist</span><br><span class="hljs-keyword"></span>git commit -m <span class="hljs-string">&#x27;first commit&#x27;</span><br>git <span class="hljs-keyword">subtree </span>push --<span class="hljs-keyword">prefix </span><span class="hljs-keyword">dist </span><span class="hljs-keyword">origin </span>gh-pages<br><br><br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>github</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>record</tag>
+      
+      <tag>study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>web application security(书)</title>
     <link href="/chenduo-blog.github.io/2021/04/10/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/"/>
     <url>/chenduo-blog.github.io/2021/04/10/web%E5%AE%89%E5%85%A8%E5%AD%A6%E4%B9%A0/</url>
