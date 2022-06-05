@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>vue3部署githubpage空白</title>
+    <link href="/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/"/>
+    <url>/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/</url>
+    
+    <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>在页面完成后，打包上线页面出现白屏问题。百度到的，解决办法是，改变config文件夹下，index.js中，build下的 assetsPublicPath：”/“ =&gt; assetsPublicPath：”./“。<br>随后发现创建的是vue3的项目没有config文件夹。</p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>在项目根目录，创建 vue.config.js 文件，文件内容如下：</p><figure class="highlight coffeescript"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs coffeescript"><span class="hljs-built_in">module</span>.<span class="hljs-built_in">exports</span>=&#123;<br>    publicPath:<span class="hljs-string">&quot;./&quot;</span><br>&#125;<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>github</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>record</tag>
+      
+      <tag>study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>paiza --B096:爆弾の大爆発</title>
     <link href="/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/"/>
     <url>/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/</url>
