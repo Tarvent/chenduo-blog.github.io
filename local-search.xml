@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Install Xcode Command Line Tools</title>
+    <link href="/chenduo-blog.github.io/2022/06/12/Install%20Xcode%20Command%20Line%20Tools/"/>
+    <url>/chenduo-blog.github.io/2022/06/12/Install%20Xcode%20Command%20Line%20Tools/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Xcode-Command-Line-Tools"><a href="#Xcode-Command-Line-Tools" class="headerlink" title="Xcode Command Line Tools"></a>Xcode Command Line Tools</h1><ul><li>What are Xcode Command Line Tools</li></ul><p>These are tools for software developers that run on the command line, that is, in the Terminal application (also called the console). These tools have been used for programming on Unix operating systems since computing’s beginnings, serving as the foundation of almost all software development.</p><p>Out of the box, a Mac doesn’t contain all of the software and tools needed for programming. Instead, Apple provides a complete development environment for programmers named Xcode, which is available separately for download and installation. The full Xcode package is huge, requiring over 40GB of disk space, and supports development for all Apple operating systems. Many software developers, particularly web application developers, are using Macs but aren’t developing software for Apple devices. They still need the Unix-like tools and utilities installed with the Xcode package. Fortunately, Apple provides a separate and much smaller download, the Xcode Command Line Tools, that installs the most-needed utilities for software development. You can install this smaller package from the Terminal application or as part of installing Homebrew, the popular Mac package manager.</p><h1 id="With-Homebrew"><a href="#With-Homebrew" class="headerlink" title="With Homebrew"></a>With Homebrew</h1><p>Most developers need additional programming languages and utilities that don’t come installed on macOS and are not included in the Xcode Command Line Tools package. You can use Homebrew, the popular Mac package manager, to install almost any open source developer tool. Homebrew will install Xcode Command Line Tools as part of its installation process. Since you’ll probably need Homebrew, you might as well let Homebrew install Xcode Command Line Tools for you. </p><figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs JS">xcode-select --install <br>xcode-select --version<br></code></pre></div></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>MAC</category>
+      
+      <category>XCODE</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>记录</tag>
+      
+      <tag>博客</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>vue3部署githubpage空白</title>
     <link href="/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/"/>
     <url>/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/</url>
