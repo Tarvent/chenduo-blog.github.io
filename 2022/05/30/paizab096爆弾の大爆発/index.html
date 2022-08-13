@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" data-default-color-scheme=&#34;light&#34;>
+<html lang="en" data-default-color-scheme=light>
 
 
 
@@ -9,40 +9,52 @@
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/chenduo-blog.github.io/img/favicon.png">
   <link rel="icon" href="/chenduo-blog.github.io/img/favicon.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
+  
+    <meta name="description" content="很有意思的题目难度：easy~medium  Questionあなたは今、とある戦略ゲームをプレイしています。ゲームの中で、敵を攻撃するために、フィールドに爆弾を仕掛けました。敵がフィールド内に入ったところで一気に爆弾を点火し、敵に攻撃をする寸法です。 フィールドは縦 H 行、横 W 行のマス目としてあらわされ、これらのマス目のうちのいくつかに爆弾が仕掛けてあります。i 行目、j 列目の爆弾が爆発">
+<meta property="og:type" content="article">
+<meta property="og:title" content="paiza --B096:爆弾の大爆発">
+<meta property="og:url" content="https://tarvent.github.io/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/index.html">
+<meta property="og:site_name" content="Tarvent blog">
+<meta property="og:description" content="很有意思的题目难度：easy~medium  Questionあなたは今、とある戦略ゲームをプレイしています。ゲームの中で、敵を攻撃するために、フィールドに爆弾を仕掛けました。敵がフィールド内に入ったところで一気に爆弾を点火し、敵に攻撃をする寸法です。 フィールドは縦 H 行、横 W 行のマス目としてあらわされ、これらのマス目のうちのいくつかに爆弾が仕掛けてあります。i 行目、j 列目の爆弾が爆発">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/Photo%20by%20Meiying%20Ng.jpg">
+<meta property="article:published_time" content="2022-05-30T14:12:36.814Z">
+<meta property="article:modified_time" content="2022-05-30T16:40:03.080Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="record">
+<meta property="article:tag" content="study">
+<meta property="article:tag" content="コードテスト">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/Photo%20by%20Meiying%20Ng.jpg">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
   
   <title>paiza --B096:爆弾の大爆発 - Tarvent blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
 
+
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+
   <link  rel="stylesheet" href="/chenduo-blog.github.io/lib/hint/hint.min.css" />
 
-  
-    
-    
-      
-      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/agate.min.css" />
-    
-  
-
-  
-    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-  
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -51,24 +63,46 @@
 
 <link  rel="stylesheet" href="/chenduo-blog.github.io/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/chenduo-blog.github.io/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/chenduo-blog.github.io/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"tarvent.github.io","root":"/chenduo-blog.github.io/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tarvent.github.io","root":"/chenduo-blog.github.io/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/chenduo-blog.github.io/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/chenduo-blog.github.io/js/utils.js" ></script>
   <script  src="/chenduo-blog.github.io/js/color-schema.js" ></script>
+  
+
+
+  
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
-  <header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 60vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand"
-       href="/chenduo-blog.github.io/">&nbsp;<strong>陳鐸＿Chenduo's blog</strong>&nbsp;</a>
+    <a class="navbar-brand" href="/chenduo-blog.github.io/">
+      <strong>陳鐸＿Chenduo&#39;s blog</strong>
+    </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -140,15 +174,29 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/chenduo-blog.github.io/travel/">
+                <i class="iconfont icon-map"></i>
+                Travel
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self">&nbsp;<i
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -157,60 +205,71 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/chenduo-blog.github.io/img/thumb-1920-81993.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="paiza --B096:爆弾の大爆発">
-              
-            </span>
-
-            
-              <div class="mt-3">
-  
-  
-    <span class="post-meta">
-      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-05-30 23:12" pubdate>
-        May 30, 2022 pm
-      </time>
-    </span>
-  
-</div>
-
-<div class="mt-1">
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-chart"></i>
-      448 字
-    </span>
   
 
-  
-    
-    <span class="post-meta mr-2">
-      <i class="iconfont icon-clock-fill"></i>
-      
-      
-      7
-       分钟
-    </span>
-  
-
-  
-  
-</div>
-
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/chenduo-blog.github.io/img/thumb-1920-81993.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="paiza --B096:爆弾の大爆発"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2022-05-30 23:12" pubdate>
+          May 30, 2022 pm
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          <!-- compatible with older versions-->
+          1.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          <!-- compatible with older versions-->
+          15 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
+
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
@@ -219,66 +278,126 @@
 
 <div class="container-fluid nopadding-x">
   <div class="row nomargin-x">
-    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
     <div class="col-lg-8 nopadding-x-md">
       <div class="container nopadding-x-md" id="board-ctn">
-        <div class="py-5" id="board">
+        <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
             <h1 style="display: none">paiza --B096:爆弾の大爆発</h1>
             
-            <div class="markdown-body">
-              <p>很有意思的题目<br>难度：easy~medium</p>
+            
+              <div class="markdown-body">
+                
+                <p>很有意思的题目<br>难度：easy~medium</p>
 <hr>
 <h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><p>あなたは今、とある戦略ゲームをプレイしています。<br>ゲームの中で、敵を攻撃するために、フィールドに爆弾を仕掛けました。<br>敵がフィールド内に入ったところで一気に爆弾を点火し、敵に攻撃をする寸法です。</p>
 <p>フィールドは縦 H 行、横 W 行のマス目としてあらわされ、これらのマス目のうちのいくつかに爆弾が仕掛けてあります。<br>i 行目、j 列目の爆弾が爆発すると、i 行目全体と j 列目全体に爆風が広がります。<br>あなたはすでにフィールド上に爆弾を仕掛け終わりました。<br>フィールド上の爆弾を一気に点火した場合、いくつのマスに爆風が広がるかを計算してください。</p>
 <p>例えば、入力例 1 では以下のマスに爆風が広がるため、求めるべきマス目数は 12 になります。</p>
-<figure class="highlight asciidoc"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs asciidoc">入力例1<br>4 4<br>#.#.<br><span class="hljs-code">....</span><br><span class="hljs-code">..#.</span><br><span class="hljs-code">....</span><br></code></pre></div></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs">出力例1<br>12<br></code></pre></div></td></tr></table></figure>
-<figure class="highlight asciidoc"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs asciidoc">入力例2<br>5 8<br>.#.#....<br><span class="hljs-code">........</span><br><span class="hljs-code">........</span><br><span class="hljs-code">........</span><br>.....#..<br></code></pre></div></td></tr></table></figure>
-<figure class="highlight"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs">25<br></code></pre></div></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">入力例1<br>4 4<br>#.#.<br><span class="hljs-code">....</span><br><span class="hljs-code">..#.</span><br><span class="hljs-code">....</span><br></code></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs">出力例1<br>12<br></code></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc">入力例2<br>5 8<br>.#.#....<br><span class="hljs-code">........</span><br><span class="hljs-code">........</span><br><span class="hljs-code">........</span><br>.....#..<br></code></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs">25<br></code></pre></td></tr></table></figure>
 <hr>
 <h1 id="Notice"><a href="#Notice" class="headerlink" title="Notice"></a>Notice</h1><p>1.需要注意读取有十位数百位数以上。<br>2.js中字符串不能改变，改成数组</p>
-<h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><figure class="highlight js"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs js">process.stdin.resume();<br>process.stdin.setEncoding(<span class="hljs-string">&#x27;utf8&#x27;</span>);<br><span class="hljs-comment">// 自分の得意な言語で</span><br><span class="hljs-comment">// Let&#x27;s チャレンジ！！</span><br><span class="hljs-keyword">var</span> lines = [];<br><span class="hljs-keyword">var</span> reader = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;readline&#x27;</span>).createInterface(&#123;<br><span class="hljs-attr">input</span>: process.stdin,<br><span class="hljs-attr">output</span>: process.stdout<br>&#125;);<br>reader.on(<span class="hljs-string">&#x27;line&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">line</span>) =&gt;</span> &#123;<br>lines.push(line);<br>&#125;);<br>reader.on(<span class="hljs-string">&#x27;close&#x27;</span>, <span class="hljs-function">() =&gt;</span> &#123;<br><span class="hljs-keyword">var</span> N=lines[<span class="hljs-number">0</span>];<br><br><span class="hljs-keyword">var</span> n = N.substring(<span class="hljs-number">0</span>, N.indexOf(<span class="hljs-string">&quot; &quot;</span>));<br><br><span class="hljs-keyword">var</span> m = N.substring(N.indexOf(<span class="hljs-string">&quot; &quot;</span>)+<span class="hljs-number">1</span>,N.length);<br><span class="hljs-comment">//注意一位数以上的索引和截取</span><br><span class="hljs-keyword">const</span> coor = [];<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>; j&lt;=m;j++)&#123;<br>        <span class="hljs-keyword">if</span>(lines[i][j]==<span class="hljs-string">&#x27;#&#x27;</span>)&#123;<br>            coor.push([i,j]);<br>        &#125;<br>    &#125;<br>&#125;<span class="hljs-comment">//获取坐标炸弹</span><br><br><br><br><span class="hljs-keyword">const</span> result=[];<br><br><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;=n;i++)&#123;<br>    result.push(lines[i].split(<span class="hljs-string">&#x27;&#x27;</span>));<br>&#125;<span class="hljs-comment">//change to 数组</span><br><br><br><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;coor.length;i++)&#123;<br>    <span class="hljs-keyword">var</span> x=coor[i][<span class="hljs-number">0</span>];<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>;j&lt;m;j++)&#123;<br>        result[x][j]=<span class="hljs-string">&#x27;#&#x27;</span>;<br>    &#125;<br>&#125;<span class="hljs-comment">//横坐标</span><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;coor.length;i++)&#123;<br>    <span class="hljs-keyword">var</span> y= coor[i][<span class="hljs-number">1</span>];<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">1</span>;j&lt;=n;j++)&#123;<br>        <span class="hljs-keyword">if</span>(result[j][y]!=<span class="hljs-string">&#x27;#&#x27;</span>)&#123;<br>            result[j][y]=<span class="hljs-string">&#x27;#&#x27;</span>;<br>        &#125;<br><br>    &#125;<br>&#125;<span class="hljs-comment">//纵坐标</span><br><br><span class="hljs-keyword">var</span> z = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;=n;i++)&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>;j&lt;=m;j++)&#123;<br>        <span class="hljs-keyword">if</span>(result[i][j]==<span class="hljs-string">&#x27;#&#x27;</span>)&#123;<br>            z++;<br>        &#125;<br>    &#125;<br>&#125;<span class="hljs-comment">//count z</span><br><br><span class="hljs-built_in">console</span>.log(z);<br>&#125;);<br></code></pre></div></td></tr></table></figure>
+<h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><code class="hljs js">process.stdin.resume();<br>process.stdin.setEncoding(<span class="hljs-string">&#x27;utf8&#x27;</span>);<br><span class="hljs-comment">// 自分の得意な言語で</span><br><span class="hljs-comment">// Let&#x27;s チャレンジ！！</span><br><span class="hljs-keyword">var</span> lines = [];<br><span class="hljs-keyword">var</span> reader = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;readline&#x27;</span>).createInterface(&#123;<br><span class="hljs-attr">input</span>: process.stdin,<br><span class="hljs-attr">output</span>: process.stdout<br>&#125;);<br>reader.on(<span class="hljs-string">&#x27;line&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">line</span>) =&gt;</span> &#123;<br>lines.push(line);<br>&#125;);<br>reader.on(<span class="hljs-string">&#x27;close&#x27;</span>, <span class="hljs-function">() =&gt;</span> &#123;<br><span class="hljs-keyword">var</span> N=lines[<span class="hljs-number">0</span>];<br><br><span class="hljs-keyword">var</span> n = N.substring(<span class="hljs-number">0</span>, N.indexOf(<span class="hljs-string">&quot; &quot;</span>));<br><br><span class="hljs-keyword">var</span> m = N.substring(N.indexOf(<span class="hljs-string">&quot; &quot;</span>)+<span class="hljs-number">1</span>,N.length);<br><span class="hljs-comment">//注意一位数以上的索引和截取</span><br><span class="hljs-keyword">const</span> coor = [];<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">1</span>;i&lt;=n;i++)&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>; j&lt;=m;j++)&#123;<br>        <span class="hljs-keyword">if</span>(lines[i][j]==<span class="hljs-string">&#x27;#&#x27;</span>)&#123;<br>            coor.push([i,j]);<br>        &#125;<br>    &#125;<br>&#125;<span class="hljs-comment">//获取坐标炸弹</span><br><br><br><br><span class="hljs-keyword">const</span> result=[];<br><br><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;=n;i++)&#123;<br>    result.push(lines[i].split(<span class="hljs-string">&#x27;&#x27;</span>));<br>&#125;<span class="hljs-comment">//change to 数组</span><br><br><br><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;coor.length;i++)&#123;<br>    <span class="hljs-keyword">var</span> x=coor[i][<span class="hljs-number">0</span>];<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>;j&lt;m;j++)&#123;<br>        result[x][j]=<span class="hljs-string">&#x27;#&#x27;</span>;<br>    &#125;<br>&#125;<span class="hljs-comment">//横坐标</span><br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;coor.length;i++)&#123;<br>    <span class="hljs-keyword">var</span> y= coor[i][<span class="hljs-number">1</span>];<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">1</span>;j&lt;=n;j++)&#123;<br>        <span class="hljs-keyword">if</span>(result[j][y]!=<span class="hljs-string">&#x27;#&#x27;</span>)&#123;<br>            result[j][y]=<span class="hljs-string">&#x27;#&#x27;</span>;<br>        &#125;<br><br>    &#125;<br>&#125;<span class="hljs-comment">//纵坐标</span><br><br><span class="hljs-keyword">var</span> z = <span class="hljs-number">0</span>;<br><span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> i=<span class="hljs-number">0</span>;i&lt;=n;i++)&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">let</span> j=<span class="hljs-number">0</span>;j&lt;=m;j++)&#123;<br>        <span class="hljs-keyword">if</span>(result[i][j]==<span class="hljs-string">&#x27;#&#x27;</span>)&#123;<br>            z++;<br>        &#125;<br>    &#125;<br>&#125;<span class="hljs-comment">//count z</span><br><br><span class="hljs-built_in">console</span>.log(z);<br>&#125;);<br></code></pre></td></tr></table></figure>
 
-            </div>
-            <hr>
-            <div>
-              <div class="post-metas mb-3">
-                
-                  <div class="post-meta mr-3">
-                    <i class="iconfont icon-category"></i>
-                    
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/">刷题</a>
-                    
-                  </div>
-                
-                
-                  <div class="post-meta">
-                    <i class="iconfont icon-tags"></i>
-                    
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/record/">record</a>
-                    
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/study/">study</a>
-                    
-                      <a class="hover-with-bg" href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">コードテスト</a>
-                    
-                  </div>
                 
               </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/" class="category-chain-item">刷题</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/chenduo-blog.github.io/tags/record/">#record</a>
+      
+        <a href="/chenduo-blog.github.io/tags/study/">#study</a>
+      
+        <a href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">#コードテスト</a>
+      
+    </div>
+  
+</div>
+
+
               
-                <p class="note note-warning">
-                  
-                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
-                  
-                </p>
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>paiza --B096:爆弾の大爆発</div>
+      <div>https://tarvent.github.io/chenduo-blog.github.io/2022/05/30/paizab096爆弾の大爆発/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Author</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Posted on</div>
+          <div>May 30, 2022</div>
+        </div>
+      
+      
+      <div class="license-meta-item">
+        <div>Licensed under</div>
+        <div>
+          
+            
+            
+              <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+              <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                <i class="iconfont icon-by"></i>
+              </span>
+              </a>
+            
+          
+        </div>
+      </div>
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
               
-              
-                <div class="post-prevnext">
+                <div class="post-prevnext my-3">
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/">
+                      <a href="/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/" title="vue3部署githubpage空白">
                         <i class="iconfont icon-arrowleft"></i>
                         <span class="hidden-mobile">vue3部署githubpage空白</span>
                         <span class="visible-mobile">Previous</span>
@@ -288,7 +407,7 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/">
+                      <a href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/" title="JavaScript字符串数组">
                         <span class="hidden-mobile">JavaScript字符串数组</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
@@ -304,25 +423,56 @@
         </div>
       </div>
     </div>
-    
-      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
-        <div id="toc">
-  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;Table of Contents</p>
   <div class="toc-body" id="toc-body"></div>
 </div>
 
-      </div>
-    
+
+
+  </aside>
+
+
+    </div>
   </div>
 </div>
 
-<!-- Custom -->
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
 
 
     
 
     
-      <a id="scroll-top-button" href="#" role="button">
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
         <i class="iconfont icon-arrowup" aria-hidden="true"></i>
       </a>
     
@@ -341,56 +491,58 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a ><span>Chen duo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>陳鐸</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-  <div class="statistics">
-    
-    
-
-    
-      
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
-            总访问量 
-            <span id="busuanzi_value_site_pv"></span>
-             次
-          </span>
-      
-      
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
-            总访客数 
-            <span id="busuanzi_value_site_uv"></span>
-             人
-          </span>
-      
-    
-  </div>
-
-
+    <div class="footer-content">
+       <a ><span>Chen duo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>陳鐸</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
   
 
   
-</footer>
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
 
+  
+  
+  
+</div>
 
-  <!-- SCRIPTS -->
+  </footer>
+
+  <!-- Scripts -->
   
   <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
@@ -409,7 +561,23 @@
 <script  src="/chenduo-blog.github.io/js/events.js" ></script>
 <script  src="/chenduo-blog.github.io/js/plugins.js" ></script>
 
-<!-- Plugins -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
 
 
   
@@ -418,63 +586,90 @@
 
 
 
+
   
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      headingSelector : CONFIG.toc.headingSelector || 'h1,h2,h3,h4,h5,h6',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      collapseDepth   : CONFIG.toc.collapseDepth || 0,
+      scrollSmooth    : true,
+      headingsOffset  : -boardTop
+    });
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+  });
+</script>
 
 
+  <script src=https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js></script>
 
-  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+  <script>Fluid.plugins.codeWidget();</script>
 
 
+  
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+  });
+</script>
 
-  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+  
+<script>
+  Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
 
 
-
-  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
-
-
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/chenduo-blog.github.io/js/local-search.js" ></script>
-
-
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/chenduo-blog.github.io/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>

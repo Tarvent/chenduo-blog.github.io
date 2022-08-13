@@ -1,7 +1,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" data-default-color-scheme=&#34;light&#34;>
+<html lang="en" data-default-color-scheme=light>
 
 
 
@@ -9,14 +9,24 @@
   <meta charset="UTF-8">
   <link rel="apple-touch-icon" sizes="76x76" href="/chenduo-blog.github.io/img/favicon.png">
   <link rel="icon" href="/chenduo-blog.github.io/img/favicon.png">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Tarvent blog">
+<meta property="og:url" content="https://tarvent.github.io/chenduo-blog.github.io/index.html">
+<meta property="og:site_name" content="Tarvent blog">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
   
   <title>Tarvent blog</title>
 
@@ -24,9 +34,12 @@
 
 
 
-<!-- 主题依赖的图标库，不要自行修改 -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
 
 
 
@@ -35,24 +48,46 @@
 
 <link  rel="stylesheet" href="/chenduo-blog.github.io/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/chenduo-blog.github.io/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/chenduo-blog.github.io/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"tarvent.github.io","root":"/chenduo-blog.github.io/","version":"1.8.11","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"tarvent.github.io","root":"/chenduo-blog.github.io/","version":"1.9.2","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/chenduo-blog.github.io/local-search.xml"};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/chenduo-blog.github.io/js/utils.js" ></script>
   <script  src="/chenduo-blog.github.io/js/color-schema.js" ></script>
+  
+
+
+  
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
-    <a class="navbar-brand"
-       href="/chenduo-blog.github.io/">&nbsp;<strong>陳鐸＿Chenduo's blog</strong>&nbsp;</a>
+    <a class="navbar-brand" href="/chenduo-blog.github.io/">
+      <strong>陳鐸＿Chenduo&#39;s blog</strong>
+    </a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -124,15 +159,29 @@
             </li>
           
         
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/chenduo-blog.github.io/travel/">
+                <i class="iconfont icon-map"></i>
+                Travel
+              </a>
+            </li>
+          
+        
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
-                class="iconfont icon-search"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+            </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self">&nbsp;<i
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
                 class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
@@ -141,34 +190,40 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/chenduo-blog.github.io/img/Photo%20by%20Meiying%20Ng.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="自ら機会を創り出し、機会によって自らを変えよ。">
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/chenduo-blog.github.io/img/Photo%20by%20Meiying%20Ng.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="自ら機会を創り出し、機会によって自らを変えよ。"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
@@ -193,19 +248,12 @@
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/08/12/8%E6%9C%88%E6%98%BE%E5%8D%A1/" target="_self">
-          
-          
-            
-          
-          最新ニュースRTX 40系ー＞10月RX 7000系ー＞11月
-AMD or NVIDIAAMD最新一代的RX6000系列，传统光栅性能已经非常接近NVIDIA同级别的RTX30系列，但是在光追性能方面依然有很大的差距。
-結論：NVIDIA is better.
-How to choose ビデオカードの型番1080P おすすめ：RTX3050　or 以下
-2K　　おすすめ：RTX 3060/RX
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/08/12/8%E6%9C%88%E6%98%BE%E5%8D%A1/" target="_self">
+        <div>
+          最新ニュースRTX 40系ー＞10月RX 7000系ー＞11月 AMD or NVIDIAAMD最新一代的RX6000系列，传统光栅性能已经非常接近NVIDIA同级别的RTX30系列，但是在光追性能方面依然有很大的差距。 結論：NVIDIA is better. How to choose ビデオカードの型番1080P おすすめ：RTX3050　or 以下 2K　　おすすめ：RTX 3060&#x2F;RX
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -217,20 +265,168 @@ How to choose ビデオカードの型番1080P おすすめ：RTX3050　or 以�
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/PC/">PC</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/PC/" class="category-chain-item">PC</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/">パソコン</a>
+              <a href="/chenduo-blog.github.io/tags/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3/">#パソコン</a>
             
-              <a href="/chenduo-blog.github.io/tags/%E3%83%93%E3%83%87%E3%82%AA%E3%82%AB%E3%83%BC%E3%83%89/">ビデオカード</a>
+              <a href="/chenduo-blog.github.io/tags/%E3%83%93%E3%83%87%E3%82%AA%E3%82%AB%E3%83%BC%E3%83%89/">#ビデオカード</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/chenduo-blog.github.io/2022/07/21/hexo%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" target="_self">
+          <img src="/chenduo-blog.github.io/img/pexels-craig-adderley-1563355.jpg" srcset="/chenduo-blog.github.io/img/loading.gif" lazyload alt="hexo无法加载图片解决方法">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/chenduo-blog.github.io/2022/07/21/hexo%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" target="_self">
+          hexo无法加载图片解决方法
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/07/21/hexo%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/" target="_self">
+        <div>
+          版本：Hexo 3以上　　最近搭建hexo博客时遇到了图片部署后不显示的问题 上网找了很多方式都没有完美解决问题，后来查看了官方文档后终于解决了问题（完美解决）建议以后大家遇到了问题也先去看看官方文档：https:&#x2F;&#x2F;hexo.io&#x2F;zh-cn&#x2F;docs 解决方案如下： 在根目录下配置文件_config.yml中post_asset_folder:false改为true 这样在建立文件时，Hexo
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-07-21 00:00" pubdate>
+              2022-07-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/blog/" class="category-chain-item">blog</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/chenduo-blog.github.io/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
+            
+          </div>
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/chenduo-blog.github.io/2022/07/15/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E6%96%B9%E6%B3%95%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/" target="_self">
+          <img src="/chenduo-blog.github.io/img/pexels-craig-adderley-1563355.jpg" srcset="/chenduo-blog.github.io/img/loading.gif" lazyload alt="新建博客页面">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/chenduo-blog.github.io/2022/07/15/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E6%96%B9%E6%B3%95%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/" target="_self">
+          新建博客页面
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/07/15/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E6%96%B9%E6%B3%95%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/" target="_self">
+        <div>
+          第一步 新建文件 和about创建一样，可以用命令行也可以复制过来1hexo n 文件名   第二步 修改index.md的配置现在已经不需要设置 layout属性  第三步 修改config.fluid配置1.首先配置menu菜单 (最容易被忽略就是这一步)  新增页面    2.再配置页面   第四步 重启服务12345hexo cleanhexo ghexo s 或者 hexo d
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-07-15 00:00" pubdate>
+              2022-07-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/blog/" class="category-chain-item">blog</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/chenduo-blog.github.io/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
             
           </div>
         
@@ -255,18 +451,12 @@ How to choose ビデオカードの型番1080P おすすめ：RTX3050　or 以�
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/06/12/Install%20Xcode%20Command%20Line%20Tools/" target="_self">
-          
-          
-            
-          
-          Xcode Command Line Tools
-What are Xcode Command Line Tools
-
-These are tools for software developers that run on the command line, that is, in the Terminal application (also called the console). These 
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/06/12/Install%20Xcode%20Command%20Line%20Tools/" target="_self">
+        <div>
+          Xcode Command Line Tools What are Xcode Command Line Tools  These are tools for software developers that run on the command line, that is, in the Terminal application (also called the console). These
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -278,22 +468,41 @@ These are tools for software developers that run on the command line, that is, i
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/MAC/">MAC</a>
-            
-              <a href="/chenduo-blog.github.io/categories/MAC/XCODE/">XCODE</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/MAC/" class="category-chain-item">MAC</a>
+  
+  
+    <span>></span>
+    
+  <a href="/chenduo-blog.github.io/categories/MAC/XCODE/" class="category-chain-item">XCODE</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/%E8%AE%B0%E5%BD%95/">记录</a>
+              <a href="/chenduo-blog.github.io/tags/%E8%AE%B0%E5%BD%95/">#记录</a>
             
-              <a href="/chenduo-blog.github.io/tags/%E5%8D%9A%E5%AE%A2/">博客</a>
+              <a href="/chenduo-blog.github.io/tags/%E5%8D%9A%E5%AE%A2/">#博客</a>
             
           </div>
         
@@ -318,17 +527,12 @@ These are tools for software developers that run on the command line, that is, i
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/" target="_self">
-          
-          
-            
-          
-          问题在页面完成后，打包上线页面出现白屏问题。百度到的，解决办法是，改变config文件夹下，index.js中，build下的 assetsPublicPath：”/“ =&gt; assetsPublicPath：”./“。随后发现创建的是vue3的项目没有config文件夹。
-解决方法在项目根目录，创建 vue.config.js 文件，文件内容如下：
-123module.exports=&#
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/05/31/vue3%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage%E7%A9%BA%E7%99%BD/" target="_self">
+        <div>
+          问题在页面完成后，打包上线页面出现白屏问题。百度到的，解决办法是，改变config文件夹下，index.js中，build下的 assetsPublicPath：”&#x2F;“ &#x3D;&gt; assetsPublicPath：”.&#x2F;“。随后发现创建的是vue3的项目没有config文件夹。 解决方法在项目根目录，创建 vue.config.js 文件，文件内容如下： 123module.exports&#x3D;&amp;#
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -340,20 +544,34 @@ These are tools for software developers that run on the command line, that is, i
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/github/">github</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/github/" class="category-chain-item">github</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/record/">record</a>
+              <a href="/chenduo-blog.github.io/tags/record/">#record</a>
             
-              <a href="/chenduo-blog.github.io/tags/study/">study</a>
+              <a href="/chenduo-blog.github.io/tags/study/">#study</a>
             
           </div>
         
@@ -378,18 +596,12 @@ These are tools for software developers that run on the command line, that is, i
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/" target="_self">
-          
-          
-            
-          
-          很有意思的题目难度：easy~medium
-
-Questionあなたは今、とある戦略ゲームをプレイしています。ゲームの中で、敵を攻撃するために、フィールドに爆弾を仕掛けました。敵がフィールド内に入ったところで一気に爆弾を点火し、敵に攻撃をする寸法です。
-フィールドは縦 H 行、横 W 行のマス目としてあらわされ、これらのマス目のうちのいくつかに爆弾が仕掛けてあります。i 行目、j 列目の爆弾が爆発
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/05/30/paizab096%E7%88%86%E5%BC%BE%E3%81%AE%E5%A4%A7%E7%88%86%E7%99%BA/" target="_self">
+        <div>
+          很有意思的题目难度：easy~medium  Questionあなたは今、とある戦略ゲームをプレイしています。ゲームの中で、敵を攻撃するために、フィールドに爆弾を仕掛けました。敵がフィールド内に入ったところで一気に爆弾を点火し、敵に攻撃をする寸法です。 フィールドは縦 H 行、横 W 行のマス目としてあらわされ、これらのマス目のうちのいくつかに爆弾が仕掛けてあります。i 行目、j 列目の爆弾が爆発
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -401,22 +613,36 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/">刷题</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/" class="category-chain-item">刷题</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/record/">record</a>
+              <a href="/chenduo-blog.github.io/tags/record/">#record</a>
             
-              <a href="/chenduo-blog.github.io/tags/study/">study</a>
+              <a href="/chenduo-blog.github.io/tags/study/">#study</a>
             
-              <a href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">コードテスト</a>
+              <a href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">#コードテスト</a>
             
           </div>
         
@@ -441,18 +667,12 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/" target="_self">
-          
-          
-            
-          
-          js字符串替换在JavaScript中，字符串是不可变的
-需要自己定义replaceAt()
-1.
-1234String.prototype.replaceAt=function(index, replacement) &#123;    return this.substr(0, index) + replacement+ this.substr(index + replacement.leng
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/04/30/js%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84/" target="_self">
+        <div>
+          js字符串替换在JavaScript中，字符串是不可变的 需要自己定义replaceAt() 1. 1234String.prototype.replaceAt&#x3D;function(index, replacement) &amp;#123;    return this.substr(0, index) + replacement+ this.substr(index + replacement.leng
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -464,20 +684,34 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/javascript/">javascript</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/javascript/" class="category-chain-item">javascript</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/study/">study</a>
+              <a href="/chenduo-blog.github.io/tags/study/">#study</a>
             
-              <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
+              <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">#学习笔记</a>
             
           </div>
         
@@ -502,17 +736,12 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/03/14/paizaC084/" target="_self">
-          
-          
-            
-          
-          Questionあなたは友人に向けてメールを送ろうとしています。ただメールを送るだけではつまらないので、文字列を装飾して送ることにしました。送りたい文字列の周囲を “+” で枠のように囲んで装飾します。
-このような処理を手作業で行いたくないため、プログラムで装飾しようとしています。この “+” の枠で囲む装飾をするプログラムを書いてください。
-入力例 1 では “Paiza” という文字列を送りま
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/03/14/paizaC084/" target="_self">
+        <div>
+          Questionあなたは友人に向けてメールを送ろうとしています。ただメールを送るだけではつまらないので、文字列を装飾して送ることにしました。送りたい文字列の周囲を “+” で枠のように囲んで装飾します。 このような処理を手作業で行いたくないため、プログラムで装飾しようとしています。この “+” の枠で囲む装飾をするプログラムを書いてください。 入力例 1 では “Paiza” という文字列を送りま
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -524,22 +753,36 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/">刷题</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/" class="category-chain-item">刷题</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/record/">record</a>
+              <a href="/chenduo-blog.github.io/tags/record/">#record</a>
             
-              <a href="/chenduo-blog.github.io/tags/study/">study</a>
+              <a href="/chenduo-blog.github.io/tags/study/">#study</a>
             
-              <a href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">コードテスト</a>
+              <a href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">#コードテスト</a>
             
           </div>
         
@@ -564,15 +807,12 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/03/07/vueelint%E6%8A%A5%E9%94%99multi-word/" target="_self">
-          
-          
-            
-          
-          出现的问题： 在 vue-cli 创建的项目中，创建文件并命名后，会报  “Component name “****” should always be multi-word”报错； 123456 1:1  error  Component name &quot;index&quot; should always be multi-word  vue/multi-word-component-na
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/03/07/vueelint%E6%8A%A5%E9%94%99multi-word/" target="_self">
+        <div>
+          出现的问题： 在 vue-cli 创建的项目中，创建文件并命名后，会报  “Component name “****” should always be multi-word”报错； 123456 1:1  error  Component name &quot;index&quot; should always be multi-word  vue&#x2F;multi-word-component-na
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -584,20 +824,34 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/vue3-2/">vue3.2</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/vue3-2/" class="category-chain-item">vue3.2</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+              <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
             
-              <a href="/chenduo-blog.github.io/tags/vue/">vue</a>
+              <a href="/chenduo-blog.github.io/tags/vue/">#vue</a>
             
           </div>
         
@@ -622,22 +876,12 @@ Questionあなたは今、とある戦略ゲームをプレイしています。
         </a>
       </h1>
 
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2022/02/20/vuecli_install%E5%95%8F%E9%A1%8C/" target="_self">
-          
-          
-            
-          
-          亲测！
-问题安装vue，始终找不到命令1npm install -g @vue/cli
-安装顺利，使用发现不存在1command vue 不存在
-解决方法1npm root -g
-正常的路径应该是 /usr/local/lib/node_modules，如果你的不是就要重新指定：
-12npm config set prefix /usr/local
-
-Advice不要用sudo 而是用包管理工具 
-        </a>
-      </p>
+      
+      <a class="index-excerpt " href="/chenduo-blog.github.io/2022/02/20/vuecli_install%E5%95%8F%E9%A1%8C/" target="_self">
+        <div>
+          亲测！ 问题安装vue，始终找不到命令1npm install -g @vue&#x2F;cli 安装顺利，使用发现不存在1command vue 不存在 解决方法1npm root -g 正常的路径应该是 &#x2F;usr&#x2F;local&#x2F;lib&#x2F;node_modules，如果你的不是就要重新指定： 12npm config set prefix &#x2F;usr&#x2F;local  Advice不要用sudo 而是用包管理工具
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -649,142 +893,41 @@ Advice不要用sudo 而是用包管理工具
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/chenduo-blog.github.io/categories/vue3-2/">vue3.2</a>
-            
-              <a href="/chenduo-blog.github.io/categories/vue3-2/macos/">macos</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/chenduo-blog.github.io/categories/vue3-2/" class="category-chain-item">vue3.2</a>
+  
+  
+    <span>></span>
+    
+  <a href="/chenduo-blog.github.io/categories/vue3-2/macos/" class="category-chain-item">macos</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+              <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0/">#学习</a>
             
-              <a href="/chenduo-blog.github.io/tags/vue/">vue</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/chenduo-blog.github.io/2021/06/14/npm%E6%97%A0root%E9%97%AE%E9%A2%98/" target="_self">
-          <img src="/chenduo-blog.github.io/img/03.jpg" srcset="/chenduo-blog.github.io/img/loading.gif" lazyload alt="全局安装npm包报错没有权限">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/chenduo-blog.github.io/2021/06/14/npm%E6%97%A0root%E9%97%AE%E9%A2%98/" target="_self">
-          全局安装npm包报错没有权限
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2021/06/14/npm%E6%97%A0root%E9%97%AE%E9%A2%98/" target="_self">
-          
-          
-            
-          
-          npm 安装时提示没有权限123456npm ERR! code EACCESnpm ERR! syscall renamenpm ERR! path /usr/local/lib/node_modules/npmnpm ERR! dest /usr/local/lib/node_modules/.npm-i9nnxROInpm ERR! errno -13
-发现 node_module 的所有者
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-14 00:00" pubdate>
-              2021-06-14
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/chenduo-blog.github.io/categories/npm/">npm</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/chenduo-blog.github.io/tags/%E8%AE%B0%E5%BD%95/">记录</a>
-            
-              <a href="/chenduo-blog.github.io/tags/frontend/">frontend</a>
-            
-              <a href="/chenduo-blog.github.io/tags/%E5%95%8F%E9%A1%8C/">問題</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-      <div class="col-12 col-md-4 m-auto index-img">
-        <a href="/chenduo-blog.github.io/2021/06/11/vue%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage/" target="_self">
-          <img src="/chenduo-blog.github.io/img/pexels-mohamed-sarim-1033729.jpg" srcset="/chenduo-blog.github.io/img/loading.gif" lazyload alt="vue3部署githubpage">
-        </a>
-      </div>
-    
-    <article class="col-12 col-md-8 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/chenduo-blog.github.io/2021/06/11/vue%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage/" target="_self">
-          vue3部署githubpage
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/chenduo-blog.github.io/2021/06/11/vue%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2githubpage/" target="_self">
-          
-          
-            
-          
-          1234567npm run buildgit checkout -b gh-pagesgit add -f distgit commit -m &#x27;first commit&#x27;git subtree push --prefix dist origin gh-pages
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-06-11 00:00" pubdate>
-              2021-06-11
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/chenduo-blog.github.io/categories/github/">github</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/chenduo-blog.github.io/tags/record/">record</a>
-            
-              <a href="/chenduo-blog.github.io/tags/study/">study</a>
+              <a href="/chenduo-blog.github.io/tags/vue/">#vue</a>
             
           </div>
         
@@ -810,7 +953,7 @@ Advice不要用sudo 而是用包管理工具
     
 
     
-      <a id="scroll-top-button" href="#" role="button">
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
         <i class="iconfont icon-arrowup" aria-hidden="true"></i>
       </a>
     
@@ -829,56 +972,58 @@ Advice不要用sudo 而是用包管理工具
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">keyword</label>
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <a ><span>Chen duo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>陳鐸</span></a> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-  <div class="statistics">
-    
-    
-
-    
-      
-        <!-- 不蒜子统计PV -->
-        <span id="busuanzi_container_site_pv" style="display: none">
-            总访问量 
-            <span id="busuanzi_value_site_pv"></span>
-             次
-          </span>
-      
-      
-        <!-- 不蒜子统计UV -->
-        <span id="busuanzi_container_site_uv" style="display: none">
-            总访客数 
-            <span id="busuanzi_value_site_uv"></span>
-             人
-          </span>
-      
-    
-  </div>
-
-
+    <div class="footer-content">
+       <a ><span>Chen duo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>陳鐸</span></a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
   
 
   
-</footer>
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+  
+</div>
 
+  
+  
+  
+</div>
 
-  <!-- SCRIPTS -->
+  </footer>
+
+  <!-- Scripts -->
   
   <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
@@ -897,7 +1042,23 @@ Advice不要用sudo 而是用包管理工具
 <script  src="/chenduo-blog.github.io/js/events.js" ></script>
 <script  src="/chenduo-blog.github.io/js/plugins.js" ></script>
 
-<!-- Plugins -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
 
 
   
@@ -906,57 +1067,24 @@ Advice不要用sudo 而是用包管理工具
 
 
 
-  
-
-
-
-
-
-
-
-
-
-  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
-
-
 
   <script  src="/chenduo-blog.github.io/js/local-search.js" ></script>
-
-
 
   <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
 
 
 
 
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/chenduo-blog.github.io/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
+  </noscript>
 </body>
 </html>
