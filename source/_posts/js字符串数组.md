@@ -16,21 +16,21 @@ index_img: /img/wallhaven-6krkyl.jpg
 
 1.
 
-```jsx
+```js
 String.prototype.replaceAt=function(index, replacement) {
     return this.substr(0, index) + replacement+ this.substr(index + replacement.length);
 }
 
 ```
 
-```jsx
+```js
 var hello="Hello World";
 alert(hello.replaceAt(2, "!!")); //should display He!!o World
 ```
 
 2.
 
-```jsx
+```js
 const replaceStr1 = (str, index, char) => {
     const strAry = str.split('');
     strAry[index] = char;
@@ -42,7 +42,7 @@ const replaceStr1 = (str, index, char) => {
 
 # js字符转数组
 
-```jsx
+```js
 // 第一种 split拆分 "abc".split('') ==> ["a","b","c"] 
 // 第二种 [...] [..."abc"] ==> ["a","b","c"] Array.from("abc") ==> ["a","b","c"]
 
@@ -53,7 +53,7 @@ lines[i].split('')；
 
 前
 
-```jsx
+```js
 //前
 publicstaticvoidsubstringTest01(){
     String str = "http_https://www.baidu.com/";

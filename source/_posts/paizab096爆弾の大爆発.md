@@ -10,6 +10,7 @@ index_img: /img/Photo by Meiying Ng.jpg
 很有意思的题目
 难度：easy~medium
 ---
+# Question
 あなたは今、とある戦略ゲームをプレイしています。
 ゲームの中で、敵を攻撃するために、フィールドに爆弾を仕掛けました。
 敵がフィールド内に入ったところで一気に爆弾を点火し、敵に攻撃をする寸法です。
@@ -46,10 +47,12 @@ i 行目、j 列目の爆弾が爆発すると、i 行目全体と j 列目全�
 25
 ```
 ---
+# Notice
 1.需要注意读取有十位数百位数以上。
 2.js中字符串不能改变，改成数组
 
-```jsx
+# Answer
+```js
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 // 自分の得意な言語で
