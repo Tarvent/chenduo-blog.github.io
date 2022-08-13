@@ -81,6 +81,31 @@
   
   
   <entry>
+    <title>Blog update messages</title>
+    <link href="/chenduo-blog.github.io/2022/07/10/blog-news/"/>
+    <url>/chenduo-blog.github.io/2022/07/10/blog-news/</url>
+    
+    <content type="html"><![CDATA[<div class="note note-primary">            <p>Last update 2022.07.24</p>          </div><div class="note note-success">            <p>Create at  2022.07.10</p>          </div><h1 id="2022年"><a href="#2022年" class="headerlink" title="2022年"></a>2022年</h1><h2 id="7月"><a href="#7月" class="headerlink" title="7月"></a>7月</h2><ul><li>blog</li></ul><p><a href="https://tarvent.github.io/chenduo-blog.github.io/2022/07/21/hexo%E6%97%A0%E6%B3%95%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/">hexo加载图片问题</a></p><p><a href="https://tarvent.github.io/chenduo-blog.github.io/2022/07/15/%E6%96%B0%E5%BB%BA%E5%8D%9A%E5%AE%A2%E9%A1%B5%E9%9D%A2%E6%96%B9%E6%B3%95%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/">博客创建新页面方法</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>blog</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Install Xcode Command Line Tools</title>
     <link href="/chenduo-blog.github.io/2022/06/12/Install%20Xcode%20Command%20Line%20Tools/"/>
     <url>/chenduo-blog.github.io/2022/06/12/Install%20Xcode%20Command%20Line%20Tools/</url>
