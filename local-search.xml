@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>LeetCode 70_climbing stairs（Java）</title>
+    <link href="/chenduo-blog.github.io/2022/09/10/LeetCode_70(%E6%AF%8F%E6%97%A5)/"/>
+    <url>/chenduo-blog.github.io/2022/09/10/LeetCode_70(%E6%AF%8F%E6%97%A5)/</url>
+    
+    <content type="html"><![CDATA[<p>dp问题<br>难度：easy</p><hr><h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><p>You are climbing a staircase. It takes n steps to reach the top.<br>Each time you can either climb 1 or 2 steps.<br>In how many distinct ways can you climb to the top? </p><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">Example <span class="hljs-number">1</span>:<br><br><span class="hljs-symbol">Input:</span> n = <span class="hljs-number">2</span><br><span class="hljs-symbol">Output:</span> <span class="hljs-number">2</span><br><span class="hljs-symbol">Explanation:</span> There are two ways <span class="hljs-keyword">to</span> climb <span class="hljs-keyword">to</span> the top.<br><span class="hljs-number">1</span>. <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span><br><span class="hljs-number">2</span>. <span class="hljs-number">2</span> steps<br>Example <span class="hljs-number">2</span>:<br><br><span class="hljs-symbol">Input:</span> n = <span class="hljs-number">3</span><br><span class="hljs-symbol">Output:</span> <span class="hljs-number">3</span><br><span class="hljs-symbol">Explanation:</span> There are three ways <span class="hljs-keyword">to</span> climb <span class="hljs-keyword">to</span> the top.<br><span class="hljs-number">1</span>. <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span><br><span class="hljs-number">2</span>. <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">2</span> steps<br><span class="hljs-number">3</span>. <span class="hljs-number">2</span> steps + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span><br></code></pre></td></tr></table></figure><p> </p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">Constraints:</span><br><span class="hljs-number">1</span> &lt;= n &lt;= <span class="hljs-number">45</span><br>来源：力扣（LeetCode）<br></code></pre></td></tr></table></figure><hr><h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br><br><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">climbStairs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;<br><br>    <span class="hljs-keyword">if</span>(n&lt;=<span class="hljs-number">2</span>)&#123;<br><br>    <span class="hljs-keyword">return</span> n;<br><br>    &#125;<br><br>    <span class="hljs-keyword">int</span> [] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n];<br><br>    dp[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;<br><br>    dp[<span class="hljs-number">1</span>] = <span class="hljs-number">2</span>;<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>;i &lt; n;i++)&#123;<br><br>        dp[i] = dp[i-<span class="hljs-number">1</span>] + dp[i-<span class="hljs-number">2</span>];<br><br>    &#125;<br><br>    <span class="hljs-keyword">return</span> dp[n-<span class="hljs-number">1</span>];<br><br>    &#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>刷题</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>record</tag>
+      
+      <tag>study</tag>
+      
+      <tag>コードテスト</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MACOS配置MySQL(最新)</title>
     <link href="/chenduo-blog.github.io/2022/09/02/MACOS_MySQL%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/"/>
     <url>/chenduo-blog.github.io/2022/09/02/MACOS_MySQL%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/</url>
