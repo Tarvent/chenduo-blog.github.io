@@ -16,28 +16,27 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="dp问题难度：easy  QuestionYou are climbing a staircase. It takes n steps to reach the top.Each time you can either climb 1 or 2 steps.In how many distinct ways can you climb to the top?   12345678910111213">
+    <meta name="description" content="计算机语言机器语言汇编语言高级语言sql 语言基础语法特点 sql 对关键字的大小写不敏感 sql语句可以以单行或者多行书写，以分行结束 sql的注释  – 单行注， – 后面一定要加空格 单行注释，#后面可加空格可不加空格SELECT * FROM emp; – 这里是注释 &#x2F;*多行注释多行注释*&#x2F; 数据库系统简介关系型数据库（RDBMS）Oracle 数据库Mysql数据库SQL server">
 <meta property="og:type" content="article">
-<meta property="og:title" content="LeetCode 70_climbing stairs（Java）">
-<meta property="og:url" content="https://tarvent.github.io/chenduo-blog.github.io/2022/09/10/LeetCode_70(%E6%AF%8F%E6%97%A5)/index.html">
+<meta property="og:title" content="MySQL_Learning_Note_Oneday">
+<meta property="og:url" content="https://tarvent.github.io/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/index.html">
 <meta property="og:site_name" content="Tarvent blog">
-<meta property="og:description" content="dp问题难度：easy  QuestionYou are climbing a staircase. It takes n steps to reach the top.Each time you can either climb 1 or 2 steps.In how many distinct ways can you climb to the top?   12345678910111213">
+<meta property="og:description" content="计算机语言机器语言汇编语言高级语言sql 语言基础语法特点 sql 对关键字的大小写不敏感 sql语句可以以单行或者多行书写，以分行结束 sql的注释  – 单行注， – 后面一定要加空格 单行注释，#后面可加空格可不加空格SELECT * FROM emp; – 这里是注释 &#x2F;*多行注释多行注释*&#x2F; 数据库系统简介关系型数据库（RDBMS）Oracle 数据库Mysql数据库SQL server">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/Photo%20by%20Meiying%20Ng.jpg">
-<meta property="article:published_time" content="2022-09-09T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-10T06:35:33.785Z">
+<meta property="og:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/wallhaven-6krkyl.jpg">
+<meta property="article:published_time" content="2022-09-14T15:00:00.000Z">
+<meta property="article:modified_time" content="2022-09-15T04:39:05.369Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="record">
 <meta property="article:tag" content="study">
-<meta property="article:tag" content="コードテスト">
+<meta property="article:tag" content="学习笔记">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/Photo%20by%20Meiying%20Ng.jpg">
+<meta name="twitter:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/wallhaven-6krkyl.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>LeetCode 70_climbing stairs（Java） - Tarvent blog</title>
+  <title>MySQL_Learning_Note_Oneday - Tarvent blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -214,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="LeetCode 70_climbing stairs（Java）"></span>
+            <span id="subtitle" data-typed-text="MySQL_Learning_Note_Oneday"></span>
           
         </div>
 
@@ -225,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-10 00:00" pubdate>
-          September 10, 2022 am
+        <time datetime="2022-09-15 00:00" pubdate>
+          September 15, 2022 am
         </time>
       </span>
     
@@ -238,7 +237,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          669 字
+          776 字
         
       </span>
     
@@ -250,7 +249,7 @@
         
         
           <!-- compatible with older versions-->
-          6 分钟
+          7 分钟
         
       </span>
     
@@ -288,21 +287,38 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">LeetCode 70_climbing stairs（Java）</h1>
+            <h1 style="display: none">MySQL_Learning_Note_Oneday</h1>
             
             
               <div class="markdown-body">
                 
-                <p>dp问题<br>难度：easy</p>
-<hr>
-<h1 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h1><p>You are climbing a staircase. It takes n steps to reach the top.<br>Each time you can either climb 1 or 2 steps.<br>In how many distinct ways can you climb to the top?
- </p>
-<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs vbnet">Example <span class="hljs-number">1</span>:<br><br><span class="hljs-symbol">Input:</span> n = <span class="hljs-number">2</span><br><span class="hljs-symbol">Output:</span> <span class="hljs-number">2</span><br><span class="hljs-symbol">Explanation:</span> There are two ways <span class="hljs-keyword">to</span> climb <span class="hljs-keyword">to</span> the top.<br><span class="hljs-number">1</span>. <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span><br><span class="hljs-number">2</span>. <span class="hljs-number">2</span> steps<br>Example <span class="hljs-number">2</span>:<br><br><span class="hljs-symbol">Input:</span> n = <span class="hljs-number">3</span><br><span class="hljs-symbol">Output:</span> <span class="hljs-number">3</span><br><span class="hljs-symbol">Explanation:</span> There are three ways <span class="hljs-keyword">to</span> climb <span class="hljs-keyword">to</span> the top.<br><span class="hljs-number">1</span>. <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span><br><span class="hljs-number">2</span>. <span class="hljs-number">1</span> <span class="hljs-keyword">step</span> + <span class="hljs-number">2</span> steps<br><span class="hljs-number">3</span>. <span class="hljs-number">2</span> steps + <span class="hljs-number">1</span> <span class="hljs-keyword">step</span><br></code></pre></td></tr></table></figure>
-<p> </p>
-<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs avrasm"><span class="hljs-symbol">Constraints:</span><br><span class="hljs-number">1</span> &lt;= n &lt;= <span class="hljs-number">45</span><br>来源：力扣（LeetCode）<br></code></pre></td></tr></table></figure>
-<hr>
-<h1 id="Answer"><a href="#Answer" class="headerlink" title="Answer"></a>Answer</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br><br><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">climbStairs</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;<br><br>    <span class="hljs-keyword">if</span>(n&lt;=<span class="hljs-number">2</span>)&#123;<br><br>    <span class="hljs-keyword">return</span> n;<br><br>    &#125;<br><br>    <span class="hljs-keyword">int</span> [] dp = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[n];<br><br>    dp[<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;<br><br>    dp[<span class="hljs-number">1</span>] = <span class="hljs-number">2</span>;<br><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">2</span>;i &lt; n;i++)&#123;<br><br>        dp[i] = dp[i-<span class="hljs-number">1</span>] + dp[i-<span class="hljs-number">2</span>];<br><br>    &#125;<br><br>    <span class="hljs-keyword">return</span> dp[n-<span class="hljs-number">1</span>];<br><br>    &#125;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+                <h1 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h1><h2 id="机器语言"><a href="#机器语言" class="headerlink" title="机器语言"></a>机器语言</h2><h2 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h2><h2 id="高级语言"><a href="#高级语言" class="headerlink" title="高级语言"></a>高级语言</h2><h1 id="sql-语言基础"><a href="#sql-语言基础" class="headerlink" title="sql 语言基础"></a>sql 语言基础</h1><h2 id="语法特点"><a href="#语法特点" class="headerlink" title="语法特点"></a>语法特点</h2><ul>
+<li>sql 对关键字的大小写不敏感</li>
+<li>sql语句可以以单行或者多行书写，以分行结束</li>
+<li>sql的注释</li>
+</ul>
+<p>– 单行注， – 后面一定要加空格</p>
+<h1 id="单行注释，-后面可加空格可不加空格"><a href="#单行注释，-后面可加空格可不加空格" class="headerlink" title="单行注释，#后面可加空格可不加空格"></a>单行注释，#后面可加空格可不加空格</h1><p>SELECT * FROM emp; – 这里是注释</p>
+<p>/*<br>多行注释<br>多行注释<br>*/</p>
+<h1 id="数据库系统简介"><a href="#数据库系统简介" class="headerlink" title="数据库系统简介"></a>数据库系统简介</h1><h2 id="关系型数据库（RDBMS）"><a href="#关系型数据库（RDBMS）" class="headerlink" title="关系型数据库（RDBMS）"></a>关系型数据库（RDBMS）</h2><p>Oracle 数据库<br>Mysql数据库<br>SQL server数据库<br>PostgreSQL<br>SQLite</p>
+<h2 id="非关系数据库（NoSQL）"><a href="#非关系数据库（NoSQL）" class="headerlink" title="非关系数据库（NoSQL）"></a>非关系数据库（NoSQL）</h2><p>Redis<br>MongoDB<br>Elasticserach<br>Cassandra<br>HBase</p>
+<h1 id="sql和数据库管理系统的关系"><a href="#sql和数据库管理系统的关系" class="headerlink" title="sql和数据库管理系统的关系"></a>sql和数据库管理系统的关系</h1><ul>
+<li>SQL是一种用于操作数据库的语言，SQL适用于所有关系型数据库。</li>
+<li>MySQL, Oracle ,SQLServer 是一个数据库软件，这些数据库软件支持SQL，也就是通过SQL可以使用这些软件，不过每一个数据库系统会在标准SQL的基础上扩展自己的SQL语法。</li>
+<li>大部分的NoSQL有自己的语言，对SQL的支持并不好</li>
+</ul>
+<h1 id="MySQL版本"><a href="#MySQL版本" class="headerlink" title="MySQL版本"></a>MySQL版本</h1><h2 id="MySQL-Community-Server"><a href="#MySQL-Community-Server" class="headerlink" title="MySQL Community Server"></a>MySQL Community Server</h2><p>社区版，免费</p>
+<h2 id="MySQL-Enterprise-Edition"><a href="#MySQL-Enterprise-Edition" class="headerlink" title="MySQL Enterprise Edition"></a>MySQL Enterprise Edition</h2><h2 id="MySQL-Cluster"><a href="#MySQL-Cluster" class="headerlink" title="MySQL Cluster"></a>MySQL Cluster</h2><h2 id="……等"><a href="#……等" class="headerlink" title="……等"></a>……等</h2><h1 id="数据库操作指令"><a href="#数据库操作指令" class="headerlink" title="数据库操作指令"></a>数据库操作指令</h1><h2 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h2><h3 id="终端执行"><a href="#终端执行" class="headerlink" title="终端执行"></a>终端执行</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">mysql -u root -<span class="hljs-selector-tag">p</span><br></code></pre></td></tr></table></figure>
+<h3 id="退出数据库"><a href="#退出数据库" class="headerlink" title="退出数据库"></a>退出数据库</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">quit<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+<h3 id="查询所有数据库"><a href="#查询所有数据库" class="headerlink" title="查询所有数据库"></a>查询所有数据库</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">show databases<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+<h3 id="创建数据库："><a href="#创建数据库：" class="headerlink" title="创建数据库："></a>创建数据库：</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> 数据库名称;<br></code></pre></td></tr></table></figure>
+<h3 id="查看数据库详情："><a href="#查看数据库详情：" class="headerlink" title="查看数据库详情："></a>查看数据库详情：</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> 数据库名称<br></code></pre></td></tr></table></figure>
+<h3 id="创建数据库（指定字符集）："><a href="#创建数据库（指定字符集）：" class="headerlink" title="创建数据库（指定字符集）："></a>创建数据库（指定字符集）：</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> 数据库名称 <span class="hljs-type">character</span> <span class="hljs-keyword">set</span> gbk/utf8;<br></code></pre></td></tr></table></figure>
+<h3 id="删除数据库："><a href="#删除数据库：" class="headerlink" title="删除数据库："></a>删除数据库：</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> 数据库名称;<br></code></pre></td></tr></table></figure>
 
+<h3 id="使用数据库："><a href="#使用数据库：" class="headerlink" title="使用数据库："></a>使用数据库：</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">use 数据库名称<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
+
+<h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1><h2 id="常用图形工具"><a href="#常用图形工具" class="headerlink" title="常用图形工具"></a>常用图形工具</h2><h3 id="Navicat"><a href="#Navicat" class="headerlink" title="Navicat"></a>Navicat</h3><h3 id="SQLyog"><a href="#SQLyog" class="headerlink" title="SQLyog"></a>SQLyog</h3><h3 id="MySQL-Workbench"><a href="#MySQL-Workbench" class="headerlink" title="MySQL Workbench"></a>MySQL Workbench</h3><h2 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a>常用工具</h2><h3 id="DataGrip"><a href="#DataGrip" class="headerlink" title="DataGrip"></a>DataGrip</h3><h3 id="phpMyAdmin"><a href="#phpMyAdmin" class="headerlink" title="phpMyAdmin"></a>phpMyAdmin</h3><h3 id="MySQLDumper"><a href="#MySQLDumper" class="headerlink" title="MySQLDumper"></a>MySQLDumper</h3>
                 
               </div>
             
@@ -320,7 +336,7 @@
     
       <span class="category-chain">
         
-  <a href="/chenduo-blog.github.io/categories/%E5%88%B7%E9%A2%98/" class="category-chain-item">刷题</a>
+  <a href="/chenduo-blog.github.io/categories/MySQL/" class="category-chain-item">MySQL</a>
   
   
 
@@ -335,11 +351,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/chenduo-blog.github.io/tags/record/">#record</a>
-      
         <a href="/chenduo-blog.github.io/tags/study/">#study</a>
       
-        <a href="/chenduo-blog.github.io/tags/%E3%82%B3%E3%83%BC%E3%83%89%E3%83%86%E3%82%B9%E3%83%88/">#コードテスト</a>
+        <a href="/chenduo-blog.github.io/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">#学习笔记</a>
       
     </div>
   
@@ -351,8 +365,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>LeetCode 70_climbing stairs（Java）</div>
-      <div>https://tarvent.github.io/chenduo-blog.github.io/2022/09/10/LeetCode_70(每日)/</div>
+      <div>MySQL_Learning_Note_Oneday</div>
+      <div>https://tarvent.github.io/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/</div>
     </div>
     <div class="license-meta">
       
@@ -364,7 +378,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>September 10, 2022</div>
+          <div>September 15, 2022</div>
         </div>
       
       
@@ -394,18 +408,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/" title="MySQL_Learning_Note_Oneday">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">MySQL_Learning_Note_Oneday</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/chenduo-blog.github.io/2022/09/02/MACOS_MySQL%E9%85%8D%E7%BD%AE%EF%BC%88%E6%9C%80%E6%96%B0%EF%BC%89/" title="MACOS配置MySQL(最新)">
-                        <span class="hidden-mobile">MACOS配置MySQL(最新)</span>
+                      <a href="/chenduo-blog.github.io/2022/09/10/LeetCode_70(%E6%AF%8F%E6%97%A5)/" title="LeetCode 70_climbing stairs（Java）">
+                        <span class="hidden-mobile">LeetCode 70_climbing stairs（Java）</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

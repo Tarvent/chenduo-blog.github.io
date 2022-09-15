@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>MySQL_Learning_Note_Oneday</title>
+    <link href="/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/"/>
+    <url>/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/</url>
+    
+    <content type="html"><![CDATA[<h1 id="计算机语言"><a href="#计算机语言" class="headerlink" title="计算机语言"></a>计算机语言</h1><h2 id="机器语言"><a href="#机器语言" class="headerlink" title="机器语言"></a>机器语言</h2><h2 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h2><h2 id="高级语言"><a href="#高级语言" class="headerlink" title="高级语言"></a>高级语言</h2><h1 id="sql-语言基础"><a href="#sql-语言基础" class="headerlink" title="sql 语言基础"></a>sql 语言基础</h1><h2 id="语法特点"><a href="#语法特点" class="headerlink" title="语法特点"></a>语法特点</h2><ul><li>sql 对关键字的大小写不敏感</li><li>sql语句可以以单行或者多行书写，以分行结束</li><li>sql的注释</li></ul><p>– 单行注， – 后面一定要加空格</p><h1 id="单行注释，-后面可加空格可不加空格"><a href="#单行注释，-后面可加空格可不加空格" class="headerlink" title="单行注释，#后面可加空格可不加空格"></a>单行注释，#后面可加空格可不加空格</h1><p>SELECT * FROM emp; – 这里是注释</p><p>/*<br>多行注释<br>多行注释<br>*/</p><h1 id="数据库系统简介"><a href="#数据库系统简介" class="headerlink" title="数据库系统简介"></a>数据库系统简介</h1><h2 id="关系型数据库（RDBMS）"><a href="#关系型数据库（RDBMS）" class="headerlink" title="关系型数据库（RDBMS）"></a>关系型数据库（RDBMS）</h2><p>Oracle 数据库<br>Mysql数据库<br>SQL server数据库<br>PostgreSQL<br>SQLite</p><h2 id="非关系数据库（NoSQL）"><a href="#非关系数据库（NoSQL）" class="headerlink" title="非关系数据库（NoSQL）"></a>非关系数据库（NoSQL）</h2><p>Redis<br>MongoDB<br>Elasticserach<br>Cassandra<br>HBase</p><h1 id="sql和数据库管理系统的关系"><a href="#sql和数据库管理系统的关系" class="headerlink" title="sql和数据库管理系统的关系"></a>sql和数据库管理系统的关系</h1><ul><li>SQL是一种用于操作数据库的语言，SQL适用于所有关系型数据库。</li><li>MySQL, Oracle ,SQLServer 是一个数据库软件，这些数据库软件支持SQL，也就是通过SQL可以使用这些软件，不过每一个数据库系统会在标准SQL的基础上扩展自己的SQL语法。</li><li>大部分的NoSQL有自己的语言，对SQL的支持并不好</li></ul><h1 id="MySQL版本"><a href="#MySQL版本" class="headerlink" title="MySQL版本"></a>MySQL版本</h1><h2 id="MySQL-Community-Server"><a href="#MySQL-Community-Server" class="headerlink" title="MySQL Community Server"></a>MySQL Community Server</h2><p>社区版，免费</p><h2 id="MySQL-Enterprise-Edition"><a href="#MySQL-Enterprise-Edition" class="headerlink" title="MySQL Enterprise Edition"></a>MySQL Enterprise Edition</h2><h2 id="MySQL-Cluster"><a href="#MySQL-Cluster" class="headerlink" title="MySQL Cluster"></a>MySQL Cluster</h2><h2 id="……等"><a href="#……等" class="headerlink" title="……等"></a>……等</h2><h1 id="数据库操作指令"><a href="#数据库操作指令" class="headerlink" title="数据库操作指令"></a>数据库操作指令</h1><h2 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h2><h3 id="终端执行"><a href="#终端执行" class="headerlink" title="终端执行"></a>终端执行</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">mysql -u root -<span class="hljs-selector-tag">p</span><br></code></pre></td></tr></table></figure><h3 id="退出数据库"><a href="#退出数据库" class="headerlink" title="退出数据库"></a>退出数据库</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">quit<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure><h3 id="查询所有数据库"><a href="#查询所有数据库" class="headerlink" title="查询所有数据库"></a>查询所有数据库</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">show databases<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure><h3 id="创建数据库："><a href="#创建数据库：" class="headerlink" title="创建数据库："></a>创建数据库：</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> 数据库名称;<br></code></pre></td></tr></table></figure><h3 id="查看数据库详情："><a href="#查看数据库详情：" class="headerlink" title="查看数据库详情："></a>查看数据库详情：</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">show</span> <span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> 数据库名称<br></code></pre></td></tr></table></figure><h3 id="创建数据库（指定字符集）："><a href="#创建数据库（指定字符集）：" class="headerlink" title="创建数据库（指定字符集）："></a>创建数据库（指定字符集）：</h3><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql"><span class="hljs-keyword">create</span> <span class="hljs-keyword">database</span> 数据库名称 <span class="hljs-type">character</span> <span class="hljs-keyword">set</span> gbk/utf8;<br></code></pre></td></tr></table></figure><h3 id="删除数据库："><a href="#删除数据库：" class="headerlink" title="删除数据库："></a>删除数据库：</h3><figure class="highlight n1ql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs n1ql"><span class="hljs-keyword">drop</span> <span class="hljs-keyword">database</span> 数据库名称;<br></code></pre></td></tr></table></figure><h3 id="使用数据库："><a href="#使用数据库：" class="headerlink" title="使用数据库："></a>使用数据库：</h3><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs abnf">use 数据库名称<span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure><h1 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h1><h2 id="常用图形工具"><a href="#常用图形工具" class="headerlink" title="常用图形工具"></a>常用图形工具</h2><h3 id="Navicat"><a href="#Navicat" class="headerlink" title="Navicat"></a>Navicat</h3><h3 id="SQLyog"><a href="#SQLyog" class="headerlink" title="SQLyog"></a>SQLyog</h3><h3 id="MySQL-Workbench"><a href="#MySQL-Workbench" class="headerlink" title="MySQL Workbench"></a>MySQL Workbench</h3><h2 id="常用工具"><a href="#常用工具" class="headerlink" title="常用工具"></a>常用工具</h2><h3 id="DataGrip"><a href="#DataGrip" class="headerlink" title="DataGrip"></a>DataGrip</h3><h3 id="phpMyAdmin"><a href="#phpMyAdmin" class="headerlink" title="phpMyAdmin"></a>phpMyAdmin</h3><h3 id="MySQLDumper"><a href="#MySQLDumper" class="headerlink" title="MySQLDumper"></a>MySQLDumper</h3>]]></content>
+    
+    
+    <categories>
+      
+      <category>MySQL</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+      <tag>学习笔记</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>LeetCode 70_climbing stairs（Java）</title>
     <link href="/chenduo-blog.github.io/2022/09/10/LeetCode_70(%E6%AF%8F%E6%97%A5)/"/>
     <url>/chenduo-blog.github.io/2022/09/10/LeetCode_70(%E6%AF%8F%E6%97%A5)/</url>
