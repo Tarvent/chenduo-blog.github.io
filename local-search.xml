@@ -4,6 +4,33 @@
   
   
   <entry>
+    <title>Cross-site leaks 先行研究</title>
+    <link href="/chenduo-blog.github.io/2022/09/27/Cross-site%20leaks%20%E7%A0%94%E7%A9%B6/"/>
+    <url>/chenduo-blog.github.io/2022/09/27/Cross-site%20leaks%20%E7%A0%94%E7%A9%B6/</url>
+    
+    <content type="html"><![CDATA[<h1 id="先行研究-Previous-Research"><a href="#先行研究-Previous-Research" class="headerlink" title="先行研究 Previous Research"></a>先行研究 Previous Research</h1><h2 id="cross-sile-leaks"><a href="#cross-sile-leaks" class="headerlink" title="cross-sile leaks"></a>cross-sile leaks</h2><ol><li><p>Cross-Site Leaks (XS-Leaks) are vulnerabilities to side channel attacks on Web browsers. </p></li><li><p>The type of side channel attacks on a web browser bypass security mechanism such as the same source policy.</p></li><li><p>Cross-Site Leaks describe a client-side bug that allows an attacker to collect side-channel information from a cross-origin HTTP resource. </p></li></ol><h2 id="Error-messages"><a href="#Error-messages" class="headerlink" title="Error messages"></a>Error messages</h2><p>The execution context of a web application is defined through the concept of web origins.<br>Web applications may call and embed other web applications to enhance functionality. </p><p>By using CORS (Cross-Origin Resource Sharing ), An attacker can send an enabled request to a target website which redirects based on the user state. </p><p>When the browser denies the request, the full URL of the redirect target is leaked in the error message. </p><p>With this attack, it is possible to detect redirects, leak redirect locations, and sensitive query parameters. </p>]]></content>
+    
+    
+    <categories>
+      
+      <category>web</category>
+      
+      <category>security</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>study</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>MySQL_Learning_Note_One</title>
     <link href="/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/"/>
     <url>/chenduo-blog.github.io/2022/09/15/MySQL_Lerning_note/</url>
