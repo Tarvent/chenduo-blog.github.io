@@ -16,16 +16,16 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="先行研究 Previous Researchcross-site leaks Cross-Site Leaks (XS-Leaks) are vulnerabilities to side channel attacks on Web browsers.   The type of side channel attacks on a web browser bypass security mech">
+    <meta name="description" content="先行研究 Previous Researchcookie1- HTTP cookies are small blocks of data created by a web server while a user is browsing a website and placed on the user’s computer or some other device by the user’s web">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Cross-site leaks 先行研究">
 <meta property="og:url" content="https://tarvent.github.io/chenduo-blog.github.io/2022/09/27/Cross-site-leaks%E7%A0%94%E7%A9%B6/index.html">
 <meta property="og:site_name" content="Tarvent blog">
-<meta property="og:description" content="先行研究 Previous Researchcross-site leaks Cross-Site Leaks (XS-Leaks) are vulnerabilities to side channel attacks on Web browsers.   The type of side channel attacks on a web browser bypass security mech">
+<meta property="og:description" content="先行研究 Previous Researchcookie1- HTTP cookies are small blocks of data created by a web server while a user is browsing a website and placed on the user’s computer or some other device by the user’s web">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://tarvent.github.io/chenduo-blog.github.io/img/pexels-mohamed-sarim-1033729.jpg">
 <meta property="article:published_time" content="2022-09-26T15:00:00.000Z">
-<meta property="article:modified_time" content="2022-09-27T06:14:39.737Z">
+<meta property="article:modified_time" content="2022-09-27T06:41:24.952Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="study">
 <meta name="twitter:card" content="summary_large_image">
@@ -236,7 +236,7 @@
         <i class="iconfont icon-chart"></i>
         
           <!-- compatible with older versions-->
-          787 字
+          1.3k 字
         
       </span>
     
@@ -248,7 +248,7 @@
         
         
           <!-- compatible with older versions-->
-          7 分钟
+          12 分钟
         
       </span>
     
@@ -291,7 +291,12 @@
             
               <div class="markdown-body">
                 
-                <h1 id="先行研究-Previous-Research"><a href="#先行研究-Previous-Research" class="headerlink" title="先行研究 Previous Research"></a>先行研究 Previous Research</h1><h2 id="cross-site-leaks"><a href="#cross-site-leaks" class="headerlink" title="cross-site leaks"></a>cross-site leaks</h2><ol>
+                <h1 id="先行研究-Previous-Research"><a href="#先行研究-Previous-Research" class="headerlink" title="先行研究 Previous Research"></a>先行研究 Previous Research</h1><h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">- HTTP cookies are small blocks <span class="hljs-keyword">of</span> data created <span class="hljs-keyword">by</span> a web <span class="hljs-keyword">server</span> <span class="hljs-keyword">while</span> a <span class="hljs-keyword">user</span> <span class="hljs-keyword">is</span> browsing a website <span class="hljs-keyword">and</span> placed <span class="hljs-keyword">on</span> the <span class="hljs-keyword">user</span>’s computer <span class="hljs-keyword">or</span> <span class="hljs-keyword">some</span> other device <span class="hljs-keyword">by</span> the <span class="hljs-keyword">user</span>’s web browser.<br></code></pre></td></tr></table></figure>
+
+<h2 id="same-origin-policy"><a href="#same-origin-policy" class="headerlink" title="same origin policy"></a>same origin policy</h2><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs maxima">For exapmle<br>This website&#x27;s <span class="hljs-built_in">origin</span> <span class="hljs-built_in">is</span> http://www.<span class="hljs-built_in">example</span>.com/dir/page.html <br>where the protocol <span class="hljs-built_in">is</span> https. <br>The host <span class="hljs-built_in">is</span>  www.<span class="hljs-built_in">example</span>.com/dir/page.html, <br><span class="hljs-keyword">and</span> the port <span class="hljs-built_in">is</span> <span class="hljs-keyword">not</span> specified.(<span class="hljs-number">80</span>)<br><br><br>http://www.<span class="hljs-built_in">example</span>.com/dir2/other.html ：    (same <span class="hljs-built_in">origin</span>)<br>http://<span class="hljs-built_in">example</span>.com/dir/other.html：             （different host）<br>http://v2.www.<span class="hljs-built_in">example</span>.com/dir/other.html：（different host）<br>http://www.<span class="hljs-built_in">example</span>.com:<span class="hljs-number">81</span>/dir/other.html：（different port）<br></code></pre></td></tr></table></figure>
+
+
+<h2 id="cross-site-leaks"><a href="#cross-site-leaks" class="headerlink" title="cross-site leaks"></a>cross-site leaks</h2><ol>
 <li><p>Cross-Site Leaks (XS-Leaks) are vulnerabilities to side channel attacks on Web browsers. </p>
 </li>
 <li><p>The type of side channel attacks on a web browser bypass security mechanism such as the same source policy.</p>
